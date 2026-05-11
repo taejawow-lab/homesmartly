@@ -65,7 +65,7 @@ faq:
     answer: "Geofencing has improved in the last 3 years. Wirecutter testing showed MyQ and Tailwind both reach roughly 95% reliable auto-open at 250-foot trigger radius. Both occasionally miss triggers when phone GPS is suppressed (in tunnels, in low-signal areas). The 5% miss rate is annoying but not safety-critical — manual open via app handles the edge cases."
   - question: "Is there a safety risk to a smart garage opener?"
     answer: "Smart openers add a network surface compared to standard openers, but the core safety (UL 325 — auto-reverse on obstruction, sensor beam interruption) is unchanged. The added risk vectors are credential theft (use MFA on the app) and a household member with app access opening the door without the homeowner present. UL 325 obstruction detection still works regardless of how the open command originated."
-draft: true
+draft: false
 ---
 
 import ProductBox from '../../components/ProductBox.astro';
@@ -111,6 +111,11 @@ Tailwind's compatibility list is the broadest — the universal programming mode
 
 ## Geofencing accuracy — the auto-open test
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post9-garage-controller.png" alt="Residential garage interior with a smart hub device on the ceiling" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 The killer feature of smart garage controllers is auto-open as you arrive home and auto-close when you leave. Both depend on accurate geofencing — which depends on your phone GPS, the app's background-location permissions, and how aggressively iOS or Android suppresses background location updates.
 
 Wirecutter's geofencing test (100 trips per controller, 250-foot trigger radius):
@@ -125,6 +130,11 @@ Both MyQ and Tailwind clear the 90% threshold needed for daily-use confidence. G
 
 ## Amazon Key for Garage — package delivery
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post9-garage-geofence.png" alt="Car approaching home with garage opening automatically" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 If you want Amazon to deliver packages inside your garage (not the porch), MyQ is currently the only consumer brand certified for Amazon Key for Garage. The system works as follows:
 
 1. Amazon driver arrives at your address
@@ -137,6 +147,11 @@ This sounds dystopian but works well in practice. For households with consistent
 
 ## HomeKit / Home Assistant integration — post-2023 reality
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post9-garage-delivery.png" alt="Delivery package being placed just inside an open garage" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 This is where Tailwind separated from the pack. As of 2026, integration support:
 
 | Controller | HomeKit | Google Home | Alexa | Home Assistant | IFTTT |
@@ -148,6 +163,11 @@ This is where Tailwind separated from the pack. As of 2026, integration support:
 For households running Home Assistant for whole-home automation, Tailwind iQ3 PRO is essentially the only choice. For households on Apple HomeKit, both Tailwind and Genie Aladdin Connect work; MyQ does not.
 
 ## Top picks by use case
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post9-garage-app.png" alt="Smartphone screen showing home automation interface beside a garage door" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 <ProductBox
   name="Chamberlain MyQ Smart Garage Hub"
