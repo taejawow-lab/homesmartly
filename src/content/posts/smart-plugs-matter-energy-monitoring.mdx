@@ -69,7 +69,7 @@ faq:
     answer: "Energy monitoring on consumer smart plugs is generally accurate within a few percent for the total kWh figure — adequate for tracking which appliances cost the most. They are not laboratory-grade. The TP-Link Kasa KP125M is one of the better-documented models for energy tracking; Wemo Insight (discontinued but still available used) was the original gold standard."
   - question: "What happens if the WiFi or hub fails?"
     answer: "WiFi smart plugs become unresponsive remotely when WiFi is down but most retain manual on/off via a physical button on the plug. Matter-over-Thread plugs continue functioning within the local mesh even if internet is out, since the controller logic runs on the local hub. This is one of Thread's underrated advantages for home automation reliability."
-draft: true
+draft: false
 ---
 
 import ProductBox from '../../components/ProductBox.astro';
@@ -93,6 +93,11 @@ This article walks through the Matter standard's effect on smart plug buying dec
 
 ## The Matter standard and what it changed
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post10-plugs-array.png" alt="Multiple wall outlets with devices plugged into smart plugs" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 Before Matter, smart-plug ecosystem compatibility was a maze. The Amazon Smart Plug worked only with Alexa. Apple HomeKit-certified plugs were a small subset of the market. Google Home plugs required Google's specific cloud routing. Buying smart plugs meant either committing to an ecosystem or running multiple apps.
 
 Matter is the Connectivity Standards Alliance's cross-ecosystem standard, backed by Apple, Google, Amazon, and Samsung. A Matter-certified plug works natively with all four — pair the plug in any one of those apps (Apple Home, Google Home, Alexa, SmartThings), and any other paired controller can also command it. The cross-ecosystem interoperability is genuine, not marketing.
@@ -100,6 +105,11 @@ Matter is the Connectivity Standards Alliance's cross-ecosystem standard, backed
 For new smart plug buyers, the practical recommendation since 2024 is straightforward: prefer Matter-certified plugs unless you have a specific reason to stick with a pre-Matter brand. Matter-certified plugs include refreshed lineups from TP-Link, Aqara, Eve, and several others. The Matter certification logo is on the box and listed in product specifications.
 
 ## WiFi vs Matter-over-Thread
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post10-plugs-livingroom.png" alt="Cozy living room with floor lamp connected via smart plug" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 Matter is a software/protocol standard, but the underlying radio can be either WiFi or Thread. The difference matters for installation and reliability.
 
@@ -110,6 +120,11 @@ Matter is a software/protocol standard, but the underlying radio can be either W
 For households with 1-5 smart plugs, WiFi is simpler and the lower per-plug cost (often a few dollars cheaper than Thread versions) wins. For households with 10+ plugs across a larger home, Thread's mesh resilience and lower per-device power use are worth the border router setup.
 
 ## Energy monitoring — what it actually shows
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post10-plugs-coffee.png" alt="Coffee maker on a kitchen counter with morning sunlight" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 Energy monitoring is the feature smart-plug marketing emphasizes most. The reality is more limited than the marketing suggests.
 
@@ -127,6 +142,11 @@ Not useful for:
 - Detecting appliance degradation (industrial monitoring tools required)
 
 ## Amperage and what to avoid plugging in
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post10-plugs-app.png" alt="Smartphone showing simple home control interface beside lamps" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 The vast majority of smart plugs sold to U.S. consumers are rated for 15 amps at 120V — about 1800 watts continuous. This covers nearly all household devices. Read the back of the plug for the exact rating before plugging in heavy loads.
 
