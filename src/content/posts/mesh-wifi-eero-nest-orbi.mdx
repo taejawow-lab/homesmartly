@@ -69,7 +69,7 @@ faq:
     answer: "Depends on house size and layout. Single high-end routers (e.g., flagship single-unit routers) cost roughly $200-300 and cover ~1,500-2,000 sq ft well. Mesh systems start around the same price for the entry tier and scale to $1,000+ for premium 3-pack systems. For 2,500+ sq ft homes or multi-story layouts, mesh typically delivers more consistent coverage; for smaller spaces, a single router is often equivalent at lower cost."
   - question: "How long do mesh systems get firmware updates?"
     answer: "Major brands (Eero, Google, Netgear) typically support firmware updates for 4-7 years after product release. Eero has been particularly active with regular updates including security patches. Google's history with Nest WiFi has been adequate but the brand transitions have created some uncertainty. Verify the model is currently supported on the manufacturer's website before buying older mesh systems from discounters."
-draft: true
+draft: false
 ---
 
 import ProductBox from '../../components/ProductBox.astro';
@@ -93,6 +93,11 @@ This article compares the three major mesh systems in the U.S. market — Amazon
 
 ## The single router vs mesh decision
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post18-mesh-signal.png" alt="Subtle wireless signal waves flowing between rooms of a home" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 A single high-end WiFi router can cover roughly 1,500-2,000 square feet of typical residential construction with strong signal. Beyond that range, signal strength drops, particularly through interior walls. Concrete, brick, or stucco walls reduce range further; lath-and-plaster construction in older homes can be especially attenuating.
 
 Practical signs you need mesh rather than a single router:
@@ -106,6 +111,11 @@ For apartments, condos, and smaller single-story homes (under 1,500 sq ft), a si
 
 ## WiFi 6 vs 6E vs 7
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post18-mesh-workfromhome.png" alt="Home office with a video call laptop on a desk" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 The WiFi standards landscape:
 
 **WiFi 6 (802.11ax)** uses the existing 2.4 GHz and 5 GHz bands with improved efficiency. OFDMA, MU-MIMO, and other features make WiFi 6 routers handle high-density client counts better than WiFi 5 predecessors. Most current devices (post-2020) support WiFi 6.
@@ -118,6 +128,11 @@ For 2026 buyers, WiFi 6E is the practical sweet spot. WiFi 7 is reasonable if yo
 
 ## Backhaul — shared vs dedicated
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post18-mesh-devices.png" alt="Multiple connected smart home devices arranged on a clean table" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 Mesh nodes communicate with each other in addition to serving client devices. The bandwidth used for inter-node communication is called backhaul. Two architectures:
 
 **Shared backhaul.** Same band used for both clients and backhaul. Cheaper to build, simpler hardware. The trade-off is that backhaul traffic competes with client traffic; performance degrades when both are heavy.
@@ -127,6 +142,11 @@ Mesh nodes communicate with each other in addition to serving client devices. Th
 Netgear Orbi has been the dedicated-backhaul leader. Premium Eero Pro 6E and Eero Pro 7 use intelligent band-selection rather than strict dedicated backhaul. Google Nest WiFi Pro shares backhaul. For homes with 50+ connected devices or heavy simultaneous streaming, dedicated backhaul shows measurable advantage.
 
 ## Thread border router — smart-home value
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post18-mesh-router.png" alt="Sleek modern router with subtle ambient light on a wooden shelf" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 The Thread border router presence in the mesh adds smart-home value:
 
