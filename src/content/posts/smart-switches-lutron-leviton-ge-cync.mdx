@@ -69,7 +69,7 @@ faq:
     answer: "Most modern smart dimmers are designed for LED loads, but specific bulb compatibility varies. Lutron Caseta is well-documented for LED compatibility and lists tested bulbs on their site. Some cheaper smart dimmers buzz or flicker with certain LED bulbs. The safest approach: pick the smart dimmer first, then choose LED bulbs from the manufacturer's compatibility list. Mismatched dimmer-bulb pairings cause the most common smart-switch complaint."
   - question: "Can I install smart switches myself or do I need an electrician?"
     answer: "Single-pole switch replacement is a reasonable DIY project for someone comfortable working with electricity and confident the power is off at the breaker. 3-way and 4-way switch wiring is more complex and varies by manufacturer. For higher-wattage circuits (large lighting loads, outdoor circuits) or any situation involving aluminum wiring, an electrician is the safer choice. Check your municipality — some jurisdictions require permits for any switch replacement."
-draft: true
+draft: false
 ---
 
 import ProductBox from '../../components/ProductBox.astro';
@@ -93,6 +93,11 @@ This article compares the three brands that dominate the U.S. smart switch marke
 
 ## The neutral wire question
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post11-switches-install.png" alt="Electrician hand installing a wall switch with small tools" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 Before any other consideration, check whether your existing wall switches have a neutral wire. Open the switch box (with power off at the breaker), and look for a bundle of white wires capped with a wire nut, typically in the back of the box. If those white wires are present, you have a neutral. If you only see black (hot) and bare or green (ground) wires, you do not.
 
 Most smart switches require a neutral to power their electronics. Lutron Caseta is the major exception — its design works without a neutral, which makes it essentially the only mainstream option for older homes (typically pre-1985) where neutrals were never run to switch boxes. This single technical factor is why Lutron Caseta dominates the older-home installation market.
@@ -100,6 +105,11 @@ Most smart switches require a neutral to power their electronics. Lutron Caseta 
 For newer construction (1985+) where neutrals are standard, the field opens to Leviton Decora Smart, GE Cync, and other neutral-required brands.
 
 ## Hub-based versus Matter-direct designs
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post11-switches-hallway.png" alt="Long home hallway with two wall switches at each end" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 The two major design philosophies in modern smart switches:
 
@@ -110,6 +120,11 @@ The two major design philosophies in modern smart switches:
 For a single room of smart switches, Matter-direct is simpler — no hub to buy. For whole-home installs (15+ switches), Caseta's hub-based architecture often ends up more reliable because every Caseta switch communicates over the same dedicated low-power radio rather than sharing WiFi airspace with phones, laptops, and streaming devices.
 
 ## LED dimmer compatibility
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post11-switches-dimmer.png" alt="Dimmer wall switch with soft warm bedroom light" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 The single most common installation problem is a mismatch between the smart dimmer and the LED bulbs it controls. Buzzing dimmers, flickering at low brightness, or bulbs that never reach full brightness all trace to dimmer-bulb incompatibility.
 
@@ -123,6 +138,11 @@ The pattern that works:
 Older incandescent and halogen bulbs work universally with any dimmer. LED bulbs are where the friction lives. CFL bulbs are not generally dimmer-compatible regardless of switch.
 
 ## 3-way and 4-way wiring
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post11-switches-remote.png" alt="Small remote control device on a bedside table" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 If your existing light is controlled from two switches (typical for stairwells and hallways), that is a 3-way circuit. Three or more switches make it a 4-way circuit. Smart switch 3-way wiring is more complex than single-pole.
 
