@@ -93,6 +93,11 @@ This article compares the three hubs that anchor most household smart-home insta
 
 ## When you need a separate hub
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-network.png" alt="Multiple wireless connections radiating between household devices" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 For households with a manageable number of smart devices and a single ecosystem, the ecosystem's own controller usually suffices:
 
 - 5-10 Matter-certified devices and one ecosystem (Apple Home, Google Home, Alexa, or SmartThings as a software-only controller) → no separate hub needed
@@ -111,6 +116,11 @@ For most users at the 20+ device mark, the hub conversation shifts from "do I ne
 
 ## Cloud-dependent vs local-first
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-server.png" alt="Home office desk with a small server-like device and a laptop" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 The fundamental architectural split among smart hubs:
 
 **Cloud-dependent (SmartThings, traditional Wink, original Hue)** — Hub processes some logic locally but most automations route through the manufacturer's cloud. Benefits: easy setup, polished apps, accessible from anywhere without VPN. Trade-offs: internet outage breaks automations, the manufacturer's cloud decisions can break or remove features, exit cost is high (devices may stop working if the cloud is deprecated).
@@ -120,6 +130,11 @@ The fundamental architectural split among smart hubs:
 Samsung SmartThings has moved partially toward local control in recent years — many automations now run locally on the SmartThings Station hardware. This is a meaningful improvement but still not full local independence. Hubitat and Home Assistant are fully local with optional cloud access.
 
 ## Radio protocol support
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-routine.png" alt="Peaceful living room at evening with multiple synchronized ambient lights" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 Major radio protocols in modern smart homes:
 
@@ -140,6 +155,11 @@ Protocol support by hub:
 Hubitat Elevation C-8 and Home Assistant Yellow are the only hubs covering all four protocols natively. SmartThings Station does Zigbee and Matter/Thread but no Z-Wave — a meaningful limitation if you have older Z-Wave smart locks or sensors.
 
 ## Long-term platform stability
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-planning.png" alt="Open notebook with diagram sketches beside a coffee cup" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 
 <figure style="margin: 1.5rem 0;">
