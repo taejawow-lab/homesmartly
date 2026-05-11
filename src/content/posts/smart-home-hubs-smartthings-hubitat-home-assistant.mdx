@@ -69,7 +69,7 @@ faq:
     answer: "Significantly harder than SmartThings or Hubitat for a non-technical user. Home Assistant Yellow ships pre-configured and reduces the install friction (no Raspberry Pi imaging), but understanding YAML configuration, integrations, and automations still requires technical comfort. Realistic estimate: a comfortable software user can have a working Home Assistant in 4-8 hours; full smart-home automation setup is more like 20-40 hours of learning and configuration spread over weeks."
   - question: "Can I run multiple hubs simultaneously?"
     answer: "Yes, and many advanced households do. A common pattern: Home Assistant as the master automation brain, with SmartThings or Apple Home as the friendly user-facing controller for family members. Devices can be added to both and exposed back and forth via Matter bridges. This compound approach gets the local-control benefits of Home Assistant without forcing family to learn the Home Assistant interface."
-draft: true
+draft: false
 ---
 
 import ProductBox from '../../components/ProductBox.astro';
@@ -141,6 +141,11 @@ Hubitat Elevation C-8 and Home Assistant Yellow are the only hubs covering all f
 
 ## Long-term platform stability
 
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-network.png" alt="Multiple wireless connections radiating between household devices" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
+
 This is the underrated dimension of hub choice. A smart-home setup is multi-year infrastructure. The hub's continued viability matters as much as its current feature set.
 
 **SmartThings** has changed platform multiple times since launch. Samsung has discontinued original SmartThings hub models, deprecated developer APIs, and shifted users to new app architectures. Each transition broke some installations. The current SmartThings Station is stable, but the historical pattern suggests another transition is possible.
@@ -152,6 +157,11 @@ This is the underrated dimension of hub choice. A smart-home setup is multi-year
 For a 5-10 year smart-home plan, Home Assistant's open-source backing is the most resilient choice. For a 2-5 year plan with low technical investment, SmartThings is easier; Hubitat is the middle ground.
 
 ## Top picks by household technical comfort
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-server.png" alt="Home office desk with a small server-like device and a laptop" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 <ProductBox
   name="Samsung SmartThings Station"
@@ -203,6 +213,11 @@ For a 5-10 year smart-home plan, Home Assistant's open-source backing is the mos
 />
 
 ## The pragmatic recommendation
+
+
+<figure style="margin: 1.5rem 0;">
+<img src="/images/illustrations/post13-hubs-routine.png" alt="Peaceful living room at evening with multiple synchronized ambient lights" style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover;" loading="lazy" decoding="async" />
+</figure>
 
 For most households expanding from a few devices to a serious smart-home setup, the SmartThings Station is the easiest entry point. Its Thread border router doubles as smart-home expansion infrastructure, the app is polished, and family members find it usable without training.
 
