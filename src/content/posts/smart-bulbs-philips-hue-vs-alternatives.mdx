@@ -78,7 +78,66 @@ faq:
   - question: "What's the best starter pack?"
     answer: "If exploring smart lighting cheaply: Wyze Color Bulb (E26) starter — $14-18 each, no bridge needed, works with Alexa/Google. Buy 2-3 for one room. If committing to whole-home: Philips Hue White Ambiance starter kit ($100-130 for 2 bulbs + Bridge), then expand with white or color bulbs as needed. Don't mix ecosystems early — pick Wyze OR Hue for now; you can always add a different brand later via Matter."
 draft: false
+
+## Top picks (2026 — color, white-tunable, and budget)
+
+Three smart bulb systems cover the spectrum from premium ecosystem to budget single-bulb. Affiliate links to Amazon below; check fixture compatibility (E26/E12, dimmer presence) first.
+
+<ProductBox
+  name="Philips Hue White & Color Ambiance Starter Kit (3 bulbs + Bridge)"
+  priceHint="$199 list (often $149–$169 on sale)"
+  pros={[
+    "Industry reference: most reliable color accuracy and brightness",
+    "Bridge enables 50+ bulbs, scenes, and accessories",
+    "Works with everything: Alexa, Google, HomeKit, Matter"
+  ]}
+  cons={[
+    "Premium price per bulb vs alternatives",
+    "Bridge is required for full feature set"
+  ]}
+  href="https://www.amazon.com/dp/B07XCWFRJP"
+  region="us"
+/>
+
+<ProductBox
+  name="Wyze Bulb Color (4-pack, Wi-Fi)"
+  priceHint="$32 list for 4-pack (often $24–$29 on sale)"
+  pros={[
+    "~75% cheaper per bulb than Hue with comparable color range",
+    "No hub needed — direct Wi-Fi (saves space)",
+    "Easy app, surprisingly stable firmware in 2024+"
+  ]}
+  cons={[
+    "Slightly slower scene transitions vs Hue",
+    "Wi-Fi network can be overwhelmed with 20+ bulbs"
+  ]}
+  href="https://www.amazon.com/dp/B0BX3LCKBP"
+  region="us"
+/>
+
+<ProductBox
+  name="Govee RGBIC LED Strip (16.4 ft, Bluetooth + Wi-Fi)"
+  priceHint="$45 list (often $25–$35 on sale)"
+  pros={[
+    "Multi-color per segment (RGBIC) — real rainbow effects, not solid color",
+    "Music-sync mode that actually works",
+    "Strong adhesive, no falling-off issues"
+  ]}
+  cons={[
+    "Not a bulb replacement — accent lighting only",
+    "Color rendering not as accurate as Hue for white modes"
+  ]}
+  href="https://www.amazon.com/dp/B08LSJ3VWS"
+  region="us"
+/>
+
+For whole-home retrofit start with Hue (pay the premium, save the headache). For experiments and accent lighting, Wyze + Govee at 30% of the cost gets you 80% of the experience.
+
+
 ---
+
+import ProductBox from '../../components/ProductBox.astro';
+import Aff from '../../components/Aff.astro';
 
 The smart bulb market splits neatly into "premium ecosystem" (Philips Hue) and "good enough cheap" (Wyze, Sengled, Govee, others). The price ratio is dramatic: Hue color bulbs at $40-50 each versus Wyze at $14-18. Whether the premium is worth it depends entirely on scale, ecosystem, and how much you value app polish. This article walks through the actual data from Wirecutter long-term testing, Consumer Reports surveys, and ENERGY STAR specifications to make the trade-offs explicit.
 
