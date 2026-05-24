@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci || npm install
+      - name: Restore npm binary execute bits
+        run: chmod -R a+x node_modules/.bin node_modules/astro 2>/dev/null || true
       - run: npm run build
         env:
           PUBLIC_CF_BEACON_TOKEN: ce9e237fae9e4dc7a5669dab4fcea5d3
