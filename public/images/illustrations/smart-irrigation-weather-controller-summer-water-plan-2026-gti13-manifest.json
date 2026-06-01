@@ -1,0 +1,126 @@
+{
+  "date": "2026-06-02",
+  "site": "homesmartly",
+  "gti13_gate": "available true via direct ComfyUI; sentinel unreachable but direct ComfyUI ok",
+  "endpoint": "http://192.168.50.29:8188",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "slug": "smart-irrigation-weather-controller-summer-water-plan-2026",
+  "post": "src/content/posts/smart-irrigation-weather-controller-summer-water-plan-2026.mdx",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-irrigation-water-plan-2026-hero.png",
+      "bytes": 2577636,
+      "prompt": "suburban garden irrigation controller mounted on exterior wall with blank screen turned away, coiled hose, neat valve box, no text",
+      "seed": 202606020000,
+      "prompt_id": "cbf09027-3817-4614-92e7-0518c09dfc19",
+      "raw_output": {
+        "filename": "hermes_batchb_20260602_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-irrigation-water-plan-2026-01.png",
+      "bytes": 2347266,
+      "prompt": "overhead view of lawn zones marked by colored blank garden stakes and notebook with blank pages, no writing",
+      "seed": 202606020001,
+      "prompt_id": "ecaf3b29-80da-4803-b17d-b1545a8202ef",
+      "raw_output": {
+        "filename": "hermes_batchb_20260602_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-irrigation-water-plan-2026-02.png",
+      "bytes": 2381568,
+      "prompt": "close view of sprinkler spray reaching grass not pavement, safe dry walkway, no labels",
+      "seed": 202606020002,
+      "prompt_id": "e9408426-294c-4cf6-b06b-1ffa9c6fe26d",
+      "raw_output": {
+        "filename": "hermes_batchb_20260602_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-irrigation-water-plan-2026-03.png",
+      "bytes": 2733141,
+      "prompt": "irrigation valve box open with clean pipes and gloved hands partially visible, no exposed wires, no text",
+      "seed": 202606020003,
+      "prompt_id": "04327697-0d21-458f-9cec-c310673264dd",
+      "raw_output": {
+        "filename": "hermes_batchb_20260602_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-irrigation-water-plan-2026-04.png",
+      "bytes": 2596387,
+      "prompt": "garden soil moisture check with hand trowel and plain moisture meter face turned away, no numbers",
+      "seed": 202606020004,
+      "prompt_id": "d79f64db-8304-4f95-a2d7-ef47fe152ff9",
+      "raw_output": {
+        "filename": "hermes_batchb_20260602_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-irrigation-water-plan-2026-05.png",
+      "bytes": 2682602,
+      "prompt": "renter safe patio container watering setup with tray and clear walkway, no brand marks",
+      "seed": 202606020005,
+      "prompt_id": "a0974cb4-7439-4a7a-baa3-49c7e1d3eb67",
+      "raw_output": {
+        "filename": "hermes_batchb_20260602_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    }
+  ],
+  "visual_qa": "PASS after contact-sheet inspection; regenerated rejected images where needed",
+  "qa_regenerated": [
+    {
+      "site": "kurashinotes",
+      "suffix": "01",
+      "seed": 202606029201
+    },
+    {
+      "site": "learnpathhub",
+      "suffix": "02",
+      "seed": 202606029302
+    },
+    {
+      "site": "learnpathhub",
+      "suffix": "04",
+      "seed": 202606029304
+    },
+    {
+      "site": "learnpathhub",
+      "suffix": "04",
+      "seed": 202606029404,
+      "round": 2
+    }
+  ]
+}
