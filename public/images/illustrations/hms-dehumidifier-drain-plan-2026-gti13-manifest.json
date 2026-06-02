@@ -1,0 +1,103 @@
+{
+  "date": "2026-06-03",
+  "site": "homesmartly",
+  "slug": "smart-dehumidifier-basement-humidity-drain-plan-2026",
+  "endpoint": "http://192.168.50.29:8188",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-dehumidifier-drain-plan-2026-hero.png",
+      "bytes": 1389473,
+      "prompt": "basement dehumidifier in clear open space near plain wall, hose route visible, no labels",
+      "seed": 202606030000,
+      "prompt_id": "9e150874-1ee6-4142-bd4a-327e251061b6",
+      "raw_output": {
+        "filename": "hermes_batchb_20260603_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-dehumidifier-drain-plan-2026-01.png",
+      "bytes": 1705772,
+      "prompt": "overhead basement moisture map with blank cards and flashlight, no writing",
+      "seed": 202606030001,
+      "prompt_id": "f95669b8-1446-46e3-aede-c3a4c2e184af",
+      "raw_output": {
+        "filename": "hermes_batchb_20260603_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-dehumidifier-drain-plan-2026-02.png",
+      "bytes": 1271589,
+      "prompt": "close view of dehumidifier side with blank controls and clear airflow space, no text",
+      "seed": 202606030002,
+      "prompt_id": "c9897555-f101-4471-8947-55c1898b2a95",
+      "raw_output": {
+        "filename": "hermes_batchb_20260603_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-dehumidifier-drain-plan-2026-03.png",
+      "bytes": 1916985,
+      "prompt": "safe drain hose leading to floor drain with dry floor and cord separated, no labels",
+      "seed": 202606030003,
+      "prompt_id": "5d5ce6bd-90d9-4530-b8c3-743da33c8152",
+      "raw_output": {
+        "filename": "hermes_batchb_20260603_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-dehumidifier-drain-plan-2026-04.png",
+      "bytes": 1562889,
+      "prompt": "homeowner reviewing humidity trend on closed tablet with blank screen, basement shelves tidy",
+      "seed": 202606030004,
+      "prompt_id": "f3b27647-8b9f-472c-8671-a9a00b5a8439",
+      "raw_output": {
+        "filename": "hermes_batchb_20260603_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-dehumidifier-drain-plan-2026-05.png",
+      "bytes": 1601038,
+      "prompt": "basement storage reset with plastic bins off floor, dehumidifier in background, no brand marks",
+      "seed": 202606030005,
+      "prompt_id": "b36c7ea0-2a25-4541-9944-a2a54cce18ff",
+      "raw_output": {
+        "filename": "hermes_batchb_20260603_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260603-homesmartly-contact-sheet.jpg",
+  "visual_qa": "pending contact sheet review",
+  "adsense_readiness": "source-backed helpful content, practical tables/checklists, no affiliate filler, AI image provenance committed"
+}
