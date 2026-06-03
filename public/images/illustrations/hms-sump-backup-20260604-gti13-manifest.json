@@ -1,0 +1,103 @@
+{
+  "date": "2026-06-04",
+  "site": "homesmartly",
+  "slug": "smart-sump-pump-battery-backup-alert-plan-2026",
+  "endpoint": "http://192.168.50.29:8188",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-sump-backup-20260604-hero.png",
+      "bytes": 1696875,
+      "prompt": "clean basement corner with sealed sump pit, battery backup box elevated on shelf, water sensor nearby, no labels no text",
+      "seed": 202606040000,
+      "prompt_id": "1ac1a07c-6b9d-497c-acd8-b055d18da488",
+      "raw_output": {
+        "filename": "hermes_batchb_20260604_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-sump-backup-20260604-01.png",
+      "bytes": 1614416,
+      "prompt": "clean basement corner with sealed sump pit, battery backup box elevated on shelf, water sensor nearby, no labels no text",
+      "seed": 202606040001,
+      "prompt_id": "cbcf3d81-ecd6-4161-8996-8a8d9e5aa970",
+      "raw_output": {
+        "filename": "hermes_batchb_20260604_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-sump-backup-20260604-02.png",
+      "bytes": 2324158,
+      "prompt": "homeowner inspecting dry sump pump discharge pipe outside after rain, no text no logos",
+      "seed": 202606040002,
+      "prompt_id": "37150195-5b0f-43c1-9e01-6573c31f397e",
+      "raw_output": {
+        "filename": "hermes_batchb_20260604_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-sump-backup-20260604-03.png",
+      "bytes": 1325083,
+      "prompt": "blank smartphone on table beside water sensor and flashlight, basement stairs in background, no screen text",
+      "seed": 202606040003,
+      "prompt_id": "b791d432-70ae-4efb-a7f3-bbad97e79e44",
+      "raw_output": {
+        "filename": "hermes_batchb_20260604_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-sump-backup-20260604-04.png",
+      "bytes": 1482920,
+      "prompt": "safe utility area with cords routed away from water and plain outlet cover, no exposed wiring no labels",
+      "seed": 202606040004,
+      "prompt_id": "6b9179bb-ddaa-4dd6-b78e-a91d798a99fc",
+      "raw_output": {
+        "filename": "hermes_batchb_20260604_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-sump-backup-20260604-05.png",
+      "bytes": 1617509,
+      "prompt": "family moving storage bins onto shelves away from basement floor before storm, no text no logos",
+      "seed": 202606040005,
+      "prompt_id": "290b08a5-ce85-484b-afc2-783bf2618640",
+      "raw_output": {
+        "filename": "hermes_batchb_20260604_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260604-homesmartly-contact-sheet.jpg",
+  "visual_qa": "pending contact sheet review",
+  "adsense_readiness": "helpful source-backed guide, practical tables/checklists, no affiliate filler, AI image provenance committed"
+}
