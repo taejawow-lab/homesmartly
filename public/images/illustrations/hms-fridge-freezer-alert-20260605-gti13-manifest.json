@@ -1,0 +1,104 @@
+{
+  "date": "2026-06-05",
+  "site": "homesmartly",
+  "slug": "smart-fridge-freezer-temperature-alert-food-safety-plan-2026",
+  "endpoint": "http://192.168.50.29:8188",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-fridge-freezer-alert-20260605-hero.png",
+      "bytes": 1195021,
+      "prompt": "clean kitchen with closed refrigerator and small blank temperature sensor on counter, no text no logos",
+      "seed": 202606050000,
+      "prompt_id": "20435325-de8e-4815-8ad7-18b3595451e4",
+      "raw_output": {
+        "filename": "hermes_batchb_20260605_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-fridge-freezer-alert-20260605-01.png",
+      "bytes": 1011877,
+      "prompt": "clean kitchen with closed refrigerator and small blank temperature sensor on counter, no text no logos",
+      "seed": 202606050001,
+      "prompt_id": "473a9667-5134-4b37-98db-a8606037b4f5",
+      "raw_output": {
+        "filename": "hermes_batchb_20260605_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-fridge-freezer-alert-20260605-02.png",
+      "bytes": 1699039,
+      "prompt": "freezer drawer opened briefly with organized sealed containers and blank thermometer nearby, no labels",
+      "seed": 202606050002,
+      "prompt_id": "b52105b1-af30-4e3e-9e07-3f842fdff8e3",
+      "raw_output": {
+        "filename": "hermes_batchb_20260605_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-fridge-freezer-alert-20260605-03.png",
+      "bytes": 1355552,
+      "prompt": "plain blank smartphone face down beside unbranded white temperature sensor cubes and flashlight on clean kitchen counter, no screens visible, no text, no logos, editorial realistic photo",
+      "seed": 202606059000,
+      "prompt_id": "c9325147-dfb6-49b8-b657-f28a448999af",
+      "raw_output": {
+        "filename": "hermes_batchb_20260605_qa_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "qa_regenerated": true
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-fridge-freezer-alert-20260605-04.png",
+      "bytes": 1725123,
+      "prompt": "family moving cooler packs and sealed food containers during power outage preparation, no text",
+      "seed": 202606050004,
+      "prompt_id": "e97ae020-7445-4bf5-9015-187a698ab0bd",
+      "raw_output": {
+        "filename": "hermes_batchb_20260605_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-fridge-freezer-alert-20260605-05.png",
+      "bytes": 1145977,
+      "prompt": "safe outlet area behind refrigerator visible from side, cord not pinched, no exposed wiring no labels",
+      "seed": 202606050005,
+      "prompt_id": "5789e345-b7cb-4138-a9c0-df172a30cddf",
+      "raw_output": {
+        "filename": "hermes_batchb_20260605_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260605-homesmartly-contact-sheet.jpg",
+  "visual_qa": "final contact sheet regenerated after replacing text/wrong-subject/unsafe-cord failures",
+  "adsense_readiness": "helpful source-backed guide, practical tables/checklists, no affiliate filler, AI image provenance committed"
+}
