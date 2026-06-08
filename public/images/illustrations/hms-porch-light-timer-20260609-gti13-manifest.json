@@ -1,0 +1,152 @@
+{
+  "date": "2026-06-09",
+  "site": "homesmartly",
+  "slug": "smart-porch-light-timer-neighbor-friendly-night-routine-2026",
+  "endpoint": "http://192.168.50.29:8188",
+  "host": "gti13",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public\\images\\illustrations\\hms-porch-light-timer-20260609-hero.png",
+      "bytes": 1962158,
+      "prompt": "warm front porch at dusk with shielded smart light and tidy entry, no text no logos",
+      "seed": 202606090000,
+      "prompt_id": "230fac4b-c93c-4f03-8849-7f46312b8deb",
+      "raw_output": {
+        "filename": "hermes_batchb_20260609_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup"
+      }
+    },
+    {
+      "suffix": "01",
+      "filename": "public\\images\\illustrations\\hms-porch-light-timer-20260609-01.png",
+      "bytes": 1637229,
+      "prompt": "adult adjusting porch light from blank phone indoors, no readable screen",
+      "seed": 202606090001,
+      "prompt_id": "8e214c43-6bbd-4e3d-a7f3-6b2d29d6abe0",
+      "raw_output": {
+        "filename": "hermes_batchb_20260609_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup"
+      }
+    },
+    {
+      "suffix": "02",
+      "filename": "public\\images\\illustrations\\hms-porch-light-timer-20260609-02.png",
+      "bytes": 2007768,
+      "prompt": "motion light aimed downward away from neighbor window, quiet street no signs",
+      "seed": 202606090002,
+      "prompt_id": "1da5dc5f-ace4-4cb8-b9a1-0968ff7ba725",
+      "raw_output": {
+        "filename": "hermes_batchb_20260609_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public\\images\\illustrations\\hms-porch-light-timer-20260609-03.png",
+      "bytes": 1496047,
+      "prompt": "family entry routine with shoes and keys near door under soft porch light, no writing",
+      "seed": 202606090003,
+      "prompt_id": "c238fb19-307f-43da-b6ab-84b2351a47c9",
+      "raw_output": {
+        "filename": "hermes_batchb_20260609_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup"
+      }
+    },
+    {
+      "suffix": "04",
+      "filename": "public\\images\\illustrations\\hms-porch-light-timer-20260609-04.png",
+      "bytes": 2033453,
+      "prompt": "wildlife friendly dim amber porch lighting with garden path, no animals distorted",
+      "seed": 202606090004,
+      "prompt_id": "da39f9ba-5476-4fd2-a1d9-40ad5de8e95a",
+      "raw_output": {
+        "filename": "hermes_batchb_20260609_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup"
+      }
+    },
+    {
+      "suffix": "05",
+      "filename": "public\\images\\illustrations\\hms-porch-light-timer-20260609-05.png",
+      "bytes": 2493548,
+      "prompt": "manual wall switch and outdoor fixture maintenance scene, blank labels no text",
+      "seed": 202606090005,
+      "prompt_id": "d5535b9d-851b-469d-8a25-d65499e7f880",
+      "raw_output": {
+        "filename": "hermes_batchb_20260609_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup"
+      }
+    }
+  ],
+  "contact_sheet": "\\\\wsl.localhost\\Ubuntu\\home\\taekm33\\blog-ops\\16-sites\\reports\\batch-b-20260609-homesmartly-contact-sheet.jpg",
+  "visual_qa": "PASS: subject matches porch-light timer/safety; no readable text/logos; no unsafe wiring; one neighbor-street context image is acceptable.",
+  "adsense_readiness": "source-backed practical guide, 8 citations, internal links, FAQ/schema, no affiliate filler, GTI13 provenance committed"
+}
