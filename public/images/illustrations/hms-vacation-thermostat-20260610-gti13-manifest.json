@@ -1,0 +1,132 @@
+{
+  "date": "2026-06-10",
+  "site": "homesmartly",
+  "slug": "smart-thermostat-vacation-mode-summer-travel-checklist-2026",
+  "endpoint": "REDACTED_DIRECT_GTI13_COMFYUI",
+  "host": "gti13",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-vacation-thermostat-20260610-hero.png",
+      "bytes": 1632497,
+      "prompt": "summer travel home hallway with packed suitcase, closed blinds, clean HVAC vent, no thermostat display, no screens, no text",
+      "seed": 202606100900,
+      "prompt_id": "d658b85a-ae8c-4522-966b-8ec49dca45b4",
+      "raw_output": {
+        "filename": "hermes_batchb_20260610_regen_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, scannable pattern, child face closeup, readable screen, thermostat display, clipboard writing"
+      },
+      "qa_regenerated": true
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-vacation-thermostat-20260610-01.png",
+      "bytes": 1615017,
+      "prompt": "hand placing keys beside suitcase under air vent before vacation, no phone, no thermostat screen, no writing",
+      "seed": 202606100901,
+      "prompt_id": "d194a879-1cbc-41d0-8f63-ce35107fbff9",
+      "raw_output": {
+        "filename": "hermes_batchb_20260610_regen_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, scannable pattern, child face closeup, readable screen, thermostat display, clipboard writing"
+      },
+      "qa_regenerated": true
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-vacation-thermostat-20260610-02.png",
+      "bytes": 1556730,
+      "prompt": "quiet living room with closed blinds ceiling fan and thermostat, summer travel preparation, no labels",
+      "seed": 202606100002,
+      "prompt_id": "180c5f9c-e387-4463-8836-f07f24a3fdba",
+      "raw_output": {
+        "filename": "hermes_batchb_20260610_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, scannable pattern, child face closeup"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-vacation-thermostat-20260610-03.png",
+      "bytes": 1697047,
+      "prompt": "clean HVAC filter beside plain blank clipboard turned face down in utility closet, no visible writing or labels",
+      "seed": 202606100903,
+      "prompt_id": "2aaa8426-1b87-45f2-95a1-1d7cc07a264c",
+      "raw_output": {
+        "filename": "hermes_batchb_20260610_regen_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, scannable pattern, child face closeup, readable screen, thermostat display, clipboard writing"
+      },
+      "qa_regenerated": true
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-vacation-thermostat-20260610-04.png",
+      "bytes": 1356433,
+      "prompt": "pet water bowl in cool shaded room with thermostat on distant wall, no animals closeup no text",
+      "seed": 202606100004,
+      "prompt_id": "0a287244-8ca8-49f1-8de8-1f274a848091",
+      "raw_output": {
+        "filename": "hermes_batchb_20260610_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, scannable pattern, child face closeup"
+      }
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260610-homesmartly-contact-sheet-final.jpg",
+  "visual_qa": "passed final contact-sheet review after regenerating rejected text/screen/topic artifacts; no readable text/logos/UI, no unsafe scenes, 5 accepted GTI13 rasters published",
+  "adsense_readiness": "source-backed practical guide with 8 citations, internal links, FAQ/schema, no affiliate filler, GTI13 provenance committed"
+}
