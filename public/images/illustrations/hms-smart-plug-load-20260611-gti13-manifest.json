@@ -1,0 +1,83 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-plug-load-safety-checklist-2026",
+  "date": "2026-06-11",
+  "assets": [
+    {
+      "filename": "hms-smart-plug-load-20260611-hero.png",
+      "render_url": "/images/illustrations/hms-smart-plug-load-20260611-hero.png",
+      "prompt": "smart plug in tidy living room controlling a small lamp only, blank outlet and no labels",
+      "seed": 6110000,
+      "prompt_id": "48577ff5-1a38-4340-8235-5ffc6dae0ea8",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "width": 1536,
+      "height": 864,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2,
+      "host": "gti13-direct-comfyui-redacted"
+    },
+    {
+      "filename": "hms-smart-plug-load-20260611-01.png",
+      "render_url": "/images/illustrations/hms-smart-plug-load-20260611-01.png",
+      "prompt": "adult checking a smart plug and lamp cord with empty notepad, no writing no logos",
+      "seed": 6110001,
+      "prompt_id": "f923eb3f-8130-4203-a5e3-cd91931f6abd",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "width": 1536,
+      "height": 864,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2,
+      "host": "gti13-direct-comfyui-redacted"
+    },
+    {
+      "filename": "hms-smart-plug-load-20260611-02.png",
+      "render_url": "/images/illustrations/hms-smart-plug-load-20260611-02.png",
+      "prompt": "safe home automation caution scene: a heat-producing appliance unplugged and stored on a clear shelf, power cord visibly disconnected, no glow, no active heat, no labels",
+      "seed": 6110202,
+      "prompt_id": "704e1672-80e8-42ad-83b1-6d9cfbdb5793",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "width": 1536,
+      "height": 864,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2,
+      "host": "gti13-direct-comfyui-redacted",
+      "qa_note": "regenerated after visual QA rejection"
+    },
+    {
+      "filename": "hms-smart-plug-load-20260611-03.png",
+      "render_url": "/images/illustrations/hms-smart-plug-load-20260611-03.png",
+      "prompt": "energy monitoring scene with blank phone screen beside lamp and plug, no readable UI",
+      "seed": 6110003,
+      "prompt_id": "b68dc2b9-f18f-40bc-84c7-00e0850c3835",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "width": 1536,
+      "height": 864,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2,
+      "host": "gti13-direct-comfyui-redacted"
+    },
+    {
+      "filename": "hms-smart-plug-load-20260611-04.png",
+      "render_url": "/images/illustrations/hms-smart-plug-load-20260611-04.png",
+      "prompt": "manual override basket with physical switch, flashlight and plain tag without writing",
+      "seed": 6110004,
+      "prompt_id": "6904171d-1976-4b15-8002-6a77b1761847",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "width": 1536,
+      "height": 864,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2,
+      "host": "gti13-direct-comfyui-redacted"
+    }
+  ]
+}
