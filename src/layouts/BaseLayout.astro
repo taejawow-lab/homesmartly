@@ -13,6 +13,7 @@ export interface Props {
   canonicalURL?: string;
   schema?: object;
   noindex?: boolean;
+  active?: string;
 }
 
 const {
@@ -25,6 +26,7 @@ const {
   canonicalURL = Astro.url.href,
   schema,
   noindex = false,
+  active = '',
 } = Astro.props;
 
 const siteName = import.meta.env.PUBLIC_SITE_NAME || 'yookahplus';
@@ -93,7 +95,7 @@ const finalSchema = schema || defaultSchema;
       <meta name="naver-site-verification" content={import.meta.env.PUBLIC_NAVER_VERIFICATION} />
     )}
     <!-- Theme color (사이트 primary 자동) -->
-    <meta name="theme-color" content="var(--color-primary)" />
+    <meta name="theme-color" content="#0E3B3A" />
 
     <!-- Preconnect to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -131,18 +133,30 @@ const finalSchema = schema || defaultSchema;
     <!-- Theme toggle script (FOUC 방지) -->
     <script is:inline>
       (function () {
-        const theme = localStorage.getItem('theme') ||
+        const theme = localStorage.getItem('hs-theme') ||
                       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.documentElement.setAttribute('data-theme', theme);
         document.documentElement.classList.toggle('dark', theme === 'dark');
       })();
     </script>
   </head>
-  <body class="min-h-screen flex flex-col">
-    <Header />
+  <body class="min-h-screen flex flex-col" data-active={active}>
+    <Header active={active} />
     <main class="flex-1">
       <slot />
     </main>
     <Footer />
+  <script is:inline>
+      (function(){
+        function apply(t){ document.documentElement.setAttribute('data-theme', t); document.documentElement.classList.toggle('dark', t === 'dark'); try{ localStorage.setItem('hs-theme', t); }catch(e){} }
+        document.querySelectorAll('[data-theme-toggle]').forEach(function(b){ b.addEventListener('click', function(){ apply(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }); });
+        var drawer = document.querySelector('[data-drawer]');
+        function open(){ if(drawer){ drawer.classList.add('open'); document.body.style.overflow='hidden'; } }
+        function close(){ if(drawer){ drawer.classList.remove('open'); document.body.style.overflow=''; } }
+        document.querySelectorAll('[data-menu]').forEach(function(b){ b.addEventListener('click', open); });
+        document.querySelectorAll('[data-menu-close], [data-drawer] nav a').forEach(function(b){ b.addEventListener('click', close); });
+        if('IntersectionObserver' in window){ var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.12, rootMargin:'0px 0px -8% 0px'}); document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); }); } else { document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); }); }
+      })();
+    </script>
   </body>
 </html>

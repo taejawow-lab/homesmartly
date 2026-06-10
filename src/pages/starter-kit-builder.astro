@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Starter Kit Builder" description="Measured smart-home starter kit builder for homesmartly readers." active="tools">
+
+  <section class="tool-hero wrap" data-screen-label="Builder / Hero">
+    <span class="eyebrow">Interactive Tool · 03</span>
+    <h1 class="serif">Build a starter kit that actually fits.</h1>
+    <p class="lede">Set a budget, pick your ecosystem and what matters most. We assemble a verified, conflict-free kit — every part confirmed to work together, ranked by value, never by commission.</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:80px" data-screen-label="Builder / Tool">
+    <div class="kb">
+      <div class="panel">
+        <span class="ql">01 · Your budget</span>
+        <div class="budget-v serif"><span class="cur">$</span><span id="budgetV">300</span></div>
+        <input type="range" id="budget" min="100" max="900" value="300" step="25">
+        <div class="rng-scale"><span>$100</span><span>Starter</span><span>$900</span></div>
+
+        <hr class="rule" style="margin:26px 0">
+        <span class="ql">02 · Ecosystem</span>
+        <div class="eco-grid" id="ecos">
+          <button class="eco" data-eco="apple" aria-pressed="false"><span class="eic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 13.2c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.8 1.1 9 .7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1.1 2.6-2.2.5-.7.9-1.6 1.2-2.4-2.9-1.1-2.9-3.1-2.9-3.1z"/></svg></span><span class="en">Apple Home</span></button>
+          <button class="eco" data-eco="google" aria-pressed="false"><span class="eic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></span><span class="en">Google Home</span></button>
+          <button class="eco" data-eco="alexa" aria-pressed="true"><span class="eic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="en">Alexa</span></button>
+          <button class="eco" data-eco="smartthings" aria-pressed="false"><span class="eic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span><span class="en">SmartThings</span></button>
+        </div>
+
+        <hr class="rule" style="margin:26px 0">
+        <span class="ql">03 · What matters most</span>
+        <div class="pri-chips" id="pris">
+          <button class="pchip" data-p="security" aria-pressed="true">Security</button>
+          <button class="pchip" data-p="energy" aria-pressed="true">Energy</button>
+          <button class="pchip" data-p="lighting" aria-pressed="false">Lighting</button>
+          <button class="pchip" data-p="safety" aria-pressed="false">Safety / Alarms</button>
+          <button class="pchip" data-p="climate" aria-pressed="false">Climate</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="kit">
+          <div class="kit-head">
+            <div>
+              <h2 class="serif" id="kitName">The Essential Alexa Kit</h2>
+              <p class="ksub" id="kitCount">5 parts · verified compatible</p>
+            </div>
+            <div class="kit-total">
+              <div class="kt serif">$<span id="kitTotal">285</span></div>
+              <div class="kl">of $<span id="kitBudget">300</span> budget</div>
+              <div class="budget-bar" id="bbar"><span style="width:60%"></span></div>
+            </div>
+          </div>
+          <div class="kit-items" id="kitItems"></div>
+          <div class="kit-foot">
+            <span class="kit-verified"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 6"/></svg> No protocol conflicts</span>
+            <span class="byline-sp" style="flex:1"></span>
+            <a class="btn btn-accent" href="https://www.amazon.com/s?k=smart+home+starter+kit+Matter+Thread" rel="nofollow sponsored">Add all to cart →</a>
+          </div>
+        </div>
+        <p class="fineprint" style="margin-top:16px">Picks are chosen for compatibility and value, not commission. Prices are 90-day averages; check current pricing before buying. As an Amazon Associate we earn from qualifying purchases. Want to verify a single device first? <a href="/compatibility-checker/" style="text-decoration:underline">Use the checker →</a></p>
+      </div>
+    </div>
+  </section>
+
+<script>
+(function(){
+  function svg(p){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">'+p+'</svg>';}
+  var IC={
+    hub:'<path d="M12 3 4 9v12h16V9z"/><path d="M9 21v-6h6v6"/>',
+    bulb:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 4 10.5c-.7.7-1 1.2-1 2.5H9c0-1.3-.3-1.8-1-2.5A6 6 0 0 1 12 3z"/>',
+    plug:'<path d="M9 3v6M15 3v6M7 9h10v3a5 5 0 0 1-10 0z M12 17v4"/>',
+    lock:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+    sensor:'<circle cx="12" cy="12" r="3"/><path d="M5 12a7 7 0 0 1 14 0"/>',
+    cam:'<rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/>',
+    leak:'<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>',
+    smoke:'<circle cx="12" cy="12" r="8"/><path d="M12 9v3M12 15h.01"/>',
+    therm:'<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/>',
+    energy:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>'
+  };
+  // catalog : role, priority tag, price, badges, ecosystem note
+  var CAT=[
+    {id:'echo',name:'Echo Hub (Thread border router)',ic:IC.hub,price:160,role:'Hub',pri:'core',eco:['alexa'],b:['Matter','Thread']},
+    {id:'homepod',name:'HomePod mini (border router)',ic:IC.hub,price:99,role:'Hub',pri:'core',eco:['apple'],b:['Matter','Thread']},
+    {id:'nesthub',name:'Nest Hub 2nd gen (border router)',ic:IC.hub,price:99,role:'Hub',pri:'core',eco:['google'],b:['Matter','Thread']},
+    {id:'station',name:'SmartThings Station (border router)',ic:IC.hub,price:79,role:'Hub',pri:'core',eco:['smartthings'],b:['Matter','Thread']},
+    {id:'door',name:'Eve Door & Window (Thread)',ic:IC.sensor,price:40,role:'Entry sensor',pri:'security',eco:'all',b:['Thread']},
+    {id:'lock',name:'Yale Smart Lock with Matter',ic:IC.lock,price:159,role:'Door lock',pri:'security',eco:'all',b:['Matter','Thread']},
+    {id:'cam',name:'Aqara Camera Hub G3',ic:IC.cam,price:110,role:'Camera',pri:'security',eco:'all',b:['Matter']},
+    {id:'plug',name:'Eve Energy Smart Plug (Thread)',ic:IC.plug,price:35,role:'Energy plug',pri:'energy',eco:'all',b:['Thread']},
+    {id:'monitor',name:'Emporia Vue Energy Monitor',ic:IC.energy,price:120,role:'Energy monitor',pri:'energy',eco:'all',b:['Wi-Fi']},
+    {id:'bulb',name:'Nanoleaf Essentials Bulb x2',ic:IC.bulb,price:30,role:'Lighting',pri:'lighting',eco:'all',b:['Thread']},
+    {id:'strip',name:'Govee Matter Light Strip',ic:IC.bulb,price:50,role:'Lighting',pri:'lighting',eco:'all',b:['Matter']},
+    {id:'smoke',name:'X-Sense Smoke + CO Alarm',ic:IC.smoke,price:50,role:'Alarm',pri:'safety',eco:'all',b:['Wi-Fi']},
+    {id:'leak',name:'Aqara Water Leak Sensor',ic:IC.leak,price:20,role:'Leak sensor',pri:'safety',eco:'all',b:['Zigbee']},
+    {id:'therm',name:'Amazon Smart Thermostat',ic:IC.therm,price:79,role:'Thermostat',pri:'climate',eco:'all',b:['Matter']},
+    {id:'humid',name:'Aqara TH Sensor (Thread)',ic:IC.sensor,price:25,role:'Climate sensor',pri:'climate',eco:'all',b:['Thread']}
+  ];
+  var HUBKEY={alexa:'echo',apple:'homepod',google:'nesthub',smartthings:'station'};
+  var NAME={apple:'Apple Home',google:'Google Home',alexa:'Alexa',smartthings:'SmartThings'};
+
+  var state={budget:300,eco:'alexa',pri:{security:true,energy:true,lighting:false,safety:false,climate:false}};
+  var el=function(id){return document.getElementById(id);};
+
+  function build(){
+    var kit=[], total=0;
+    // 1. hub first
+    var hub=CAT.filter(function(c){return c.id===HUBKEY[state.eco];})[0];
+    if(hub && total+hub.price<=state.budget){ kit.push(hub); total+=hub.price; }
+    // 2. priorities in order, cheapest-first within each
+    var order=['security','energy','safety','lighting','climate'];
+    order.forEach(function(p){
+      if(!state.pri[p])return;
+      var items=CAT.filter(function(c){return c.pri===p;}).sort(function(a,b){return a.price-b.price;});
+      items.forEach(function(it){
+        if(total+it.price<=state.budget){ kit.push(it); total+=it.price; }
+      });
+    });
+    // 3. fill remaining with value extras
+    if(total<state.budget*0.7){
+      CAT.filter(function(c){return c.pri==='energy'||c.pri==='lighting';}).sort(function(a,b){return a.price-b.price;}).forEach(function(it){
+        if(kit.indexOf(it)<0 && total+it.price<=state.budget){ kit.push(it); total+=it.price; }
+      });
+    }
+
+    // render
+    el('kitName').textContent='The '+(state.budget<250?'Essential':state.budget<500?'Connected':'Complete')+' '+NAME[state.eco]+' Kit';
+    el('kitCount').textContent=kit.length+' part'+(kit.length!==1?'s':'')+' · verified compatible';
+    el('kitTotal').textContent=total;
+    el('kitBudget').textContent=state.budget;
+    var pct=Math.min(100,Math.round(total/state.budget*100));
+    var bbar=el('bbar'); bbar.querySelector('span').style.width=pct+'%'; bbar.classList.remove('over');
+
+    if(kit.length===0){
+      el('kitItems').innerHTML='<div class="kit-empty"><p>Raise the budget a little — even a starter kit needs a hub.</p></div>';
+      return;
+    }
+    el('kitItems').innerHTML=kit.map(function(it){
+      return '<div class="kit-item">'
+        +'<div class="kic">'+svg(it.ic)+'</div>'
+        +'<div><div class="kn">'+it.name+'</div><div class="km"><span class="kit-role">'+it.role+'</span>'
+        +it.b.map(function(x){return '<span class="badge ok" style="font-size:.58rem">'+x+'</span>';}).join('')+'</div></div>'
+        +'<div class="kp serif">$'+it.price+'</div>'
+        +'</div>';
+    }).join('');
+  }
+
+  el('budget').addEventListener('input',function(){ state.budget=+this.value; el('budgetV').textContent=this.value; build(); });
+  document.querySelectorAll('.eco').forEach(function(b){ b.addEventListener('click',function(){
+    document.querySelectorAll('.eco').forEach(function(x){x.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true'); state.eco=b.getAttribute('data-eco'); build();
+  }); });
+  document.querySelectorAll('.pchip').forEach(function(b){ b.addEventListener('click',function(){
+    var p=b.getAttribute('data-p'); state.pri[p]=!state.pri[p]; b.setAttribute('aria-pressed',state.pri[p]?'true':'false'); build();
+  }); });
+
+  build();
+})();
+</script>
+</BaseLayout>

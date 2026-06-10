@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Energy Calculator" description="Measured smart-home energy calculator for homesmartly readers." active="tools">
+
+  <section class="tool-hero wrap" data-screen-label="Calc / Hero">
+    <span class="eyebrow">Interactive Tool · 02</span>
+    <h1 class="serif">What could a smarter setup save?</h1>
+    <p class="lede">A grounded estimate — not a sales pitch. Set your home, pick the measures you'd actually adopt, and see annual savings in dollars, kWh, and CO₂, with an honest payback window.</p>
+  </section>
+
+  <section class="wrap" style="padding-bottom:80px" data-screen-label="Calc / Tool">
+    <div class="calc">
+      <div class="panel">
+        <div class="field">
+          <div class="flabel"><span class="ft">Electricity rate</span><span class="fv" id="rateV">$0.17 / kWh</span></div>
+          <div class="fh">US average is ~$0.17. Check your bill for the exact figure.</div>
+          <input type="range" id="rate" min="8" max="45" value="17" step="1">
+        </div>
+        <div class="field">
+          <div class="flabel"><span class="ft">Home size</span><span class="fv" id="sizeV">1,800 sq ft</span></div>
+          <input type="range" id="size" min="600" max="4000" value="1800" step="100">
+        </div>
+        <div class="field">
+          <div class="flabel"><span class="ft">Months you run heating / cooling</span><span class="fv" id="hvacV">7 months</span></div>
+          <input type="range" id="hvac" min="2" max="12" value="7" step="1">
+        </div>
+
+        <hr class="rule" style="margin:8px 0 22px">
+        <div class="field" style="margin-bottom:14px"><span class="ft">Measures you'd adopt</span></div>
+        <div class="measures" id="measures">
+          <button class="measure" data-m="standby" aria-pressed="true">
+            <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 3v6M15 3v6M7 9h10v3a5 5 0 0 1-10 0z M12 17v4"/></svg></span>
+            <span><div class="mt">Kill standby loads</div><div class="md">Smart plugs on TV stack, chargers, idle electronics</div></span>
+            <span class="check"><svg viewBox="0 0 24 24" width="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+          </button>
+          <button class="measure" data-m="thermostat" aria-pressed="true">
+            <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+            <span><div class="mt">Smart thermostat schedule</div><div class="md">Setbacks while away &amp; asleep</div></span>
+            <span class="check"><svg viewBox="0 0 24 24" width="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+          </button>
+          <button class="measure" data-m="lighting" aria-pressed="false">
+            <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 4 10.5c-.7.7-1 1.2-1 2.5H9c0-1.3-.3-1.8-1-2.5A6 6 0 0 1 12 3z"/></svg></span>
+            <span><div class="mt">LED + lighting schedules</div><div class="md">Motion + timers, no lights-left-on</div></span>
+            <span class="check"><svg viewBox="0 0 24 24" width="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+          </button>
+          <button class="measure" data-m="water" aria-pressed="false">
+            <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></span>
+            <span><div class="mt">Smart water heater timer</div><div class="md">Heat on schedule, not 24/7</div></span>
+            <span class="check"><svg viewBox="0 0 24 24" width="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+          </button>
+        </div>
+      </div>
+
+      <aside class="outpanel">
+        <span class="ol">Estimated annual savings</span>
+        <div class="bignum serif"><span class="cur">$</span><span id="dollars">183</span></div>
+        <div class="peryear" id="monthly">≈ $15 / month · vs. your current setup</div>
+        <div class="outstats">
+          <div class="outstat"><div class="v serif"><span id="kwh">1,076</span></div><div class="l">kWh saved / year</div></div>
+          <div class="outstat"><div class="v serif"><span id="co2">0.46</span> t</div><div class="l">CO₂ avoided / year</div></div>
+          <div class="outstat"><div class="v serif"><span id="pct">9</span>%</div><div class="l">Of your power bill</div></div>
+          <div class="outstat"><div class="v serif">$<span id="hw">95</span></div><div class="l">Est. hardware cost</div></div>
+        </div>
+        <div class="payback">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex:0 0 auto;margin-top:1px"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span>Hardware pays for itself in about <b id="payback">6 months</b>, then it's savings from there.</span>
+        </div>
+        <p class="note">Estimates use typical US household figures and the measures you selected. Real results vary with climate, habits, and rates — we model conservatively and never assume best-case. No measure here requires unsafe wiring.</p>
+      </aside>
+    </div>
+  </section>
+
+<script>
+(function(){
+  // per-measure model: baseline annual kWh saved for a 1800sqft, 7-mo HVAC home; scaled by inputs
+  var MEASURES={
+    standby:{base:420, hw:60, hvac:false, size:0.3},   // phantom loads
+    thermostat:{base:560, hw:130, hvac:true, size:0.6}, // HVAC setback
+    lighting:{base:190, hw:70, hvac:false, size:0.5},
+    water:{base:380, hw:45, hvac:false, size:0.2}
+  };
+  var active={standby:true,thermostat:true,lighting:false,water:false};
+  var el=function(id){return document.getElementById(id);};
+
+  function fmt(n){ return n.toLocaleString('en-US'); }
+
+  function compute(){
+    var rate=+el('rate').value/100;
+    var size=+el('size').value;
+    var hvacMo=+el('hvac').value;
+    var sizeF=size/1800, hvacF=hvacMo/7;
+    var kwh=0, hw=0;
+    Object.keys(MEASURES).forEach(function(k){
+      if(!active[k])return;
+      var m=MEASURES[k];
+      var s=m.base*(1 + (sizeF-1)*m.size);
+      if(m.hvac) s*=hvacF;
+      kwh+=s; hw+=m.hw;
+    });
+    kwh=Math.round(kwh);
+    var dollars=Math.round(kwh*rate);
+    var billKwh=size*6.0; // rough annual usage estimate
+    var pct=Math.min(40,Math.round(kwh/billKwh*100));
+    var co2=(kwh*0.000417).toFixed(2); // ~0.417 kg/kWh -> tonnes
+    var paybackMo = dollars>0 ? Math.max(1,Math.round(hw/(dollars/12))) : 0;
+
+    el('dollars').textContent=fmt(dollars);
+    el('monthly').textContent='≈ $'+fmt(Math.round(dollars/12))+' / month · vs. your current setup';
+    el('kwh').textContent=fmt(kwh);
+    el('co2').textContent=co2;
+    el('pct').textContent=pct;
+    el('hw').textContent=fmt(hw);
+    el('payback').textContent= paybackMo>0 ? (paybackMo>=12? (paybackMo/12).toFixed(1)+' years' : paybackMo+' months') : '—';
+    el('payback').parentElement.parentElement.style.opacity = dollars>0?1:0.4;
+  }
+
+  ['rate','size','hvac'].forEach(function(id){ el(id).addEventListener('input',function(){
+    if(id==='rate') el('rateV').textContent='$'+(+el('rate').value/100).toFixed(2)+' / kWh';
+    if(id==='size') el('sizeV').textContent=fmt(+el('size').value)+' sq ft';
+    if(id==='hvac') el('hvacV').textContent=el('hvac').value+' months';
+    compute();
+  }); });
+  document.querySelectorAll('.measure').forEach(function(b){
+    b.addEventListener('click',function(){
+      var k=b.getAttribute('data-m');
+      active[k]=!active[k];
+      b.setAttribute('aria-pressed',active[k]?'true':'false');
+      compute();
+    });
+  });
+  compute();
+})();
+</script>
+</BaseLayout>

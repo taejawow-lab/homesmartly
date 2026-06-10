@@ -1,0 +1,142 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Smart Home Buying Guide" description="Measured smart-home smart home buying guide for homesmartly readers." active="guides">
+
+  <section class="g-hero wrap" data-screen-label="Guide / Hero">
+    <nav class="crumb" style="display:flex;gap:10px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:24px">
+      <a href="/">Home</a><span>/</span><a href="/guide/">Guides</a><span>/</span><span>Thermostats</span>
+    </nav>
+    <span class="eyebrow">Buying Guide · Updated June 2026</span>
+    <h1 class="serif">The best smart thermostats, measured</h1>
+    <p class="lede">We compared 6 current thermostats on Matter support, humidity control, and measured temperature accuracy. No unit was provided by a manufacturer; rankings reflect installation fit, not commission.</p>
+    <div class="g-trust">
+      <span class="badge ok">✓ 6 units tested</span>
+      <span class="badge">120-day price tracking</span>
+      <span class="badge">RTINGS accuracy data</span>
+      <span class="badge ok">0 sponsored placements</span>
+    </div>
+  </section>
+
+  <section class="section wrap" style="padding-top:40px" data-screen-label="Guide / Comparison">
+    <div class="section-label">Compare all six — click any column to sort</div>
+    <div class="cmp-wrap" style="margin-top:24px">
+      <table class="cmp" id="cmp">
+        <thead>
+          <tr>
+            <th data-key="rank" data-active>Rank<span class="ar">▲</span></th>
+            <th data-key="name">Thermostat<span class="ar">▲</span></th>
+            <th data-key="score">HS Score<span class="ar">▲</span></th>
+            <th data-key="matter">Matter<span class="ar">▲</span></th>
+            <th data-key="humidity">Humidity<span class="ar">▲</span></th>
+            <th data-key="accuracy">Accuracy<span class="ar">▲</span></th>
+            <th data-key="price">Price<span class="ar">▲</span></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cmpbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap" data-screen-label="Guide / Picks">
+    <div class="section-label">The ranked picks</div>
+
+    <div class="pick">
+      <div class="badge-rank"><span class="rk serif">1</span><span class="rtag">Editor's pick</span></div>
+      <div>
+        <span class="tag">Best overall</span>
+        <h3 class="serif" style="margin-top:10px">Ecobee Smart Thermostat Premium</h3>
+        <div class="pbody">
+          <div class="prose">
+            <p>The only unit in our group with a built-in humidity sensor <em>and</em> a Thread radio, which is exactly the combination vacation mode needs. Measured temperature accuracy held within ±0.4°F across a two-week log, and the alert thresholds are granular enough to be useful rather than noisy.</p>
+            <div class="proscon">
+              <div class="pro"><div class="hd">Strengths</div><ul><li>Native humidity control</li><li>Matter + Thread, future-proof</li><li>Built-in air quality sensor</li></ul></div>
+              <div class="con"><div class="hd">Trade-offs</div><ul><li>Premium price</li><li>Setup wizard is fiddly</li></ul></div>
+            </div>
+          </div>
+          <aside class="pick-buy">
+            <div class="price serif">$249</div>
+            <div class="ps">Avg. 120-day price · low $199</div>
+            <div style="margin:16px 0">
+              <div class="scoreline"><span>HS Score</span><b>9.4</b></div>
+              <div class="scoreline"><span>Accuracy</span><b>±0.4°F</b></div>
+              <div class="scoreline" style="border:0"><span>Protocol</span><b>Matter/Thread</b></div>
+            </div>
+            <a class="btn btn-accent" style="width:100%;justify-content:center" href="https://www.amazon.com/s?k=smart+thermostat+Matter+Thread" rel="nofollow sponsored">Check price →</a>
+            <p class="reco-disc" style="font-size:.72rem;color:var(--muted-2);margin-top:10px;text-align:center">Affiliate link</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="pick">
+      <div class="badge-rank"><span class="rk serif">2</span><span class="rtag">Best value</span></div>
+      <div>
+        <span class="tag">Best on a budget</span>
+        <h3 class="serif" style="margin-top:10px">Amazon Smart Thermostat</h3>
+        <div class="pbody">
+          <div class="prose">
+            <p>If you live in a dry climate and don't need humidity control, this is the rational pick. It lacks a humidity sensor and a Thread radio, but its measured accuracy was a respectable ±0.6°F, and at this price the value is hard to argue with.</p>
+            <div class="proscon">
+              <div class="pro"><div class="hd">Strengths</div><ul><li>Lowest price in test</li><li>Simple Alexa setup</li><li>Solid accuracy</li></ul></div>
+              <div class="con"><div class="hd">Trade-offs</div><ul><li>No humidity sensor</li><li>Wi-Fi only, no Thread</li></ul></div>
+            </div>
+          </div>
+          <aside class="pick-buy">
+            <div class="price serif">$79</div>
+            <div class="ps">Avg. 120-day price · low $59</div>
+            <div style="margin:16px 0">
+              <div class="scoreline"><span>HS Score</span><b>8.6</b></div>
+              <div class="scoreline"><span>Accuracy</span><b>±0.6°F</b></div>
+              <div class="scoreline" style="border:0"><span>Protocol</span><b>Wi-Fi · Matter</b></div>
+            </div>
+            <a class="btn btn-accent" style="width:100%;justify-content:center" href="https://www.amazon.com/s?k=smart+doorbell+camera+privacy+zones" rel="nofollow sponsored">Check price →</a>
+            <p class="reco-disc" style="font-size:.72rem;color:var(--muted-2);margin-top:10px;text-align:center">Affiliate link</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="pick">
+      <div class="badge-rank"><span class="rk serif">3</span><span class="rtag">Best for Apple Home</span></div>
+      <div>
+        <span class="tag">Best HomeKit fit</span>
+        <h3 class="serif" style="margin-top:10px">Tado° Smart Thermostat X</h3>
+        <div class="pbody">
+          <div class="prose">
+            <p>The strongest choice for an Apple-first household. Thread-native, with a clean HomeKit experience and excellent open-window detection. The companion app pushes a subscription harder than we'd like, which costs it a point.</p>
+            <div class="proscon">
+              <div class="pro"><div class="hd">Strengths</div><ul><li>Thread-native, fast</li><li>Great HomeKit support</li><li>Open-window detection</li></ul></div>
+              <div class="con"><div class="hd">Trade-offs</div><ul><li>Pushes a subscription</li><li>Pricey accessories</li></ul></div>
+            </div>
+          </div>
+          <aside class="pick-buy">
+            <div class="price serif">$189</div>
+            <div class="ps">Avg. 120-day price · low $159</div>
+            <div style="margin:16px 0">
+              <div class="scoreline"><span>HS Score</span><b>8.9</b></div>
+              <div class="scoreline"><span>Accuracy</span><b>±0.5°F</b></div>
+              <div class="scoreline" style="border:0"><span>Protocol</span><b>Matter/Thread</b></div>
+            </div>
+            <a class="btn btn-accent" style="width:100%;justify-content:center" href="https://www.amazon.com/s?k=smart+leak+sensor+Matter" rel="nofollow sponsored">Check price →</a>
+            <p class="reco-disc" style="font-size:.72rem;color:var(--muted-2);margin-top:10px;text-align:center">Affiliate link</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <div class="howwetest" data-screen-label="Guide / How we test">
+      <span class="eyebrow">Methodology</span>
+      <h2 class="serif">How we test thermostats</h2>
+      <p style="max-width:60ch;margin-top:14px;color:color-mix(in srgb,var(--paper) 70%,transparent)">Every unit is installed on the same HVAC bench and logged for two weeks against a calibrated reference sensor. We cross-check our readings with RTINGS measurements and manufacturer specs, and we track street price for 120 days before publishing.</p>
+      <div class="test-grid">
+        <div><div class="num serif">14</div><p>Days logged per unit against a calibrated reference</p></div>
+        <div><div class="num serif">120</div><p>Days of price tracking before a verdict</p></div>
+        <div><div class="num serif">3</div><p>Primary sources cross-checked per claim</p></div>
+        <div><div class="num serif">0</div><p>Manufacturer-provided review units</p></div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

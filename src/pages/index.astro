@@ -1,112 +1,30 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/Hero.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-
-const posts = (await getCollection('posts'))
-  .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const featuredPosts = posts.slice(0, 3);
-const recentPosts = posts.slice(3, 12);
-
-const siteName = import.meta.env.PUBLIC_SITE_NAME || 'yookahplus';
-const siteDescription = import.meta.env.PUBLIC_SITE_DESCRIPTION || '';
-const heroTitle = import.meta.env.PUBLIC_SITE_HERO_TITLE || siteName;
-const heroSubtitle = import.meta.env.PUBLIC_SITE_HERO_SUBTITLE || siteDescription;
+const posts = (await getCollection('posts')).filter((post) => !post.data.draft).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+const featuredPosts = posts.slice(0,4);
+const recentPosts = posts.slice(4,14);
+const categories = [...new Set(posts.map((p)=>p.data.category).filter(Boolean))].slice(0,8);
+const catCounts = Object.fromEntries(categories.map((c)=>[c, posts.filter((p)=>p.data.category===c).length]));
+const siteDescription = import.meta.env.PUBLIC_SITE_DESCRIPTION || 'Smart home devices aggregated from manufacturer specs, measurements, and long-term user data.';
 ---
-
-<BaseLayout title="Home" description={siteDescription}>
-  <Hero
-    title={heroTitle}
-    subtitle={heroSubtitle}
-  />
-
-  {featuredPosts.length > 0 && (
-    <section class="container mx-auto px-6 md:px-10 py-20 md:py-28">
-      <!-- editorial section header -->
-      <div class="grid grid-cols-12 gap-x-6 md:gap-x-8 mb-12 md:mb-16">
-        <div class="col-span-12 md:col-span-4">
-          <p class="text-[10px] uppercase tracking-[0.25em] font-mono text-accent mb-3">¶ Section 01</p>
-          <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-[-0.02em]" style="font-family: var(--font-display);">
-            Featured
-          </h2>
-        </div>
-        <div class="col-span-12 md:col-span-7 md:col-start-6 md:pt-4">
-          <p class="text-base md:text-lg text-foreground/70 leading-relaxed max-w-xl">
-            Hand-picked stories grounded in primary sources and verified data — what we believe is worth your attention right now.
-          </p>
-          <a href="/posts" class="inline-block mt-4 text-sm uppercase tracking-[0.15em] font-mono border-b border-foreground pb-1 hover:text-primary hover:border-primary transition-colors">
-            View archive →
-          </a>
-        </div>
+<BaseLayout title="Home" description={siteDescription} active="">
+  <section class="hero" data-screen-label="Home / Hero">
+    <div class="wrap hero-grid">
+      <div class="reveal in">
+        <div class="hero-kicker"><span class="eyebrow">HS · Issue 01</span><span class="dot"></span><span class="eyebrow">A data-grounded publication</span></div>
+        <h1 class="serif">Smart home<br />decisions, <em>measured.</em></h1>
+        <p class="lede">Manufacturer specs, RTINGS measurements, and long-term user data — synthesized into recommendations you can verify line by line. No paid placements.</p>
+        <div class="hero-cta"><a class="btn btn-primary btn-lg" href="/posts/">Read the latest <span aria-hidden="true">→</span></a><a class="btn btn-ghost btn-lg" href="/compatibility-checker/">Check device compatibility</a></div>
+        <div class="hero-trust"><div class="trust-item"><span class="v serif">{posts.length}</span><span class="l">Guides tracked</span></div><div class="trust-item"><span class="v serif">0</span><span class="l">Paid placements</span></div><div class="trust-item"><span class="v serif">3+</span><span class="l">Sources / claim</span></div><div class="trust-item"><span class="v serif">2026</span><span class="l">Matter current</span></div></div>
       </div>
-
-      <!-- asymmetric magazine grid: 1 large + 2 small -->
-      <div class="grid grid-cols-12 gap-x-6 md:gap-x-8 gap-y-12 md:gap-y-16">
-        {featuredPosts[0] && (
-          <div class="col-span-12 md:col-span-7 md:row-span-2">
-            <ArticleCard
-              title={featuredPosts[0].data.title}
-              description={featuredPosts[0].data.description}
-              href={`/posts/${featuredPosts[0].slug}`}
-              image={featuredPosts[0].data.heroImage}
-              category={featuredPosts[0].data.category}
-              pubDate={featuredPosts[0].data.pubDate}
-              variant="feature"
-              index={0}
-            />
-          </div>
-        )}
-        {featuredPosts.slice(1).map((post, i) => (
-          <div class="col-span-12 md:col-span-5">
-            <ArticleCard
-              title={post.data.title}
-              description={post.data.description}
-              href={`/posts/${post.slug}`}
-              image={post.data.heroImage}
-              category={post.data.category}
-              pubDate={post.data.pubDate}
-              variant="standard"
-              index={i + 1}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
-
-  {recentPosts.length > 0 && (
-    <section id="latest" class="border-t border-border py-20 md:py-28">
-      <div class="container mx-auto px-6 md:px-10">
-        <div class="grid grid-cols-12 gap-x-6 md:gap-x-8 mb-12 md:mb-16 items-baseline">
-          <div class="col-span-12 md:col-span-5">
-            <p class="text-[10px] uppercase tracking-[0.25em] font-mono text-accent mb-3">¶ Section 02</p>
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-[0.95] tracking-[-0.02em]" style="font-family: var(--font-display);">
-              Recent
-            </h2>
-          </div>
-          <div class="col-span-12 md:col-span-7 md:text-right text-[10px] uppercase tracking-[0.25em] font-mono text-muted-foreground">
-            ↓ {recentPosts.length} stories · Sorted by date
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
-          {recentPosts.map((post, i) => (
-            <ArticleCard
-              title={post.data.title}
-              description={post.data.description}
-              href={`/posts/${post.slug}`}
-              image={post.data.heroImage}
-              category={post.data.category}
-              pubDate={post.data.pubDate}
-              variant="standard"
-              index={i + 3}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
+      <div class="reveal in"><div class="cover"><span class="tl">COVER · NODE MESH №01</span><svg class="mesh" viewBox="0 0 400 480" fill="none" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="ln" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)" stop-opacity="0.55"/><stop offset="1" stop-color="var(--primary)" stop-opacity="0.15"/></linearGradient></defs><g stroke="url(#ln)" stroke-width="1.1"><line x1="200" y1="120" x2="110" y2="210"/><line x1="200" y1="120" x2="300" y2="200"/><line x1="110" y1="210" x2="300" y2="200"/><line x1="110" y1="210" x2="150" y2="340"/><line x1="300" y1="200" x2="270" y2="350"/><line x1="150" y1="340" x2="270" y2="350"/><line x1="150" y1="340" x2="80" y2="300"/><line x1="270" y1="350" x2="330" y2="300"/><line x1="200" y1="120" x2="200" y2="60"/><line x1="110" y1="210" x2="60" y2="160"/><line x1="300" y1="200" x2="350" y2="150"/></g><g stroke="var(--primary)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" fill="none" opacity="0.9"><path d="M155 248 L200 210 L245 248"/><path d="M165 242 V296 a4 4 0 0 0 4 4 h62 a4 4 0 0 0 4 -4 V242" opacity="0.55"/></g><g fill="var(--accent)"><circle cx="200" cy="120" r="6"/><circle cx="110" cy="210" r="5"/><circle cx="300" cy="200" r="5"/><circle cx="150" cy="340" r="5"/><circle cx="270" cy="350" r="5"/></g><g fill="var(--primary)"><circle cx="200" cy="60" r="3.5"/><circle cx="60" cy="160" r="3.5"/><circle cx="350" cy="150" r="3.5"/><circle cx="80" cy="300" r="3.5"/><circle cx="330" cy="300" r="3.5"/><circle cx="200" cy="210" r="4"/></g></svg><div class="cap"><span>Matter · Thread · Energy · Alarms</span><span>June 2026</span></div></div></div>
+    </div>
+  </section>
+  <hr class="rule" />
+  {featuredPosts.length > 0 && <section class="section wrap" data-screen-label="Home / Featured"><div class="section-label reveal">¶ Section 01 — Featured</div><div class="feature-lead reveal" style="margin-top:28px"><div class="ftxt"><span class="tag">Lead Story · {featuredPosts[0].data.category}</span><h2 class="serif"><a href={`/posts/${featuredPosts[0].slug}`}>{featuredPosts[0].data.title}</a></h2><p>{featuredPosts[0].data.description}</p><div class="row gap-16" style="margin-top:24px;flex-wrap:wrap"><a class="btn btn-primary" href={`/posts/${featuredPosts[0].slug}`}>Read the story <span aria-hidden="true">→</span></a><span class="rmeta mono" style="font-size:.72rem;color:var(--muted)">{featuredPosts[0].data.pubDate.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}).toUpperCase()} · VERIFIED</span></div></div><a href={`/posts/${featuredPosts[0].slug}`} class="feature-img" aria-label="Featured story">{featuredPosts[0].data.heroImage ? <img src={featuredPosts[0].data.heroImage} alt="" style="width:100%;height:100%;object-fit:cover" /> : <svg viewBox="0 0 400 286" width="100%" height="100%" fill="none" aria-hidden="true"><g stroke="var(--accent)" stroke-width="1" opacity="0.5"><line x1="120" y1="80" x2="220" y2="60"/><line x1="220" y1="60" x2="300" y2="120"/><line x1="120" y1="80" x2="160" y2="180"/><line x1="300" y1="120" x2="250" y2="200"/><line x1="160" y1="180" x2="250" y2="200"/></g></svg>}</a></div><div class="posts-grid">{featuredPosts.slice(1,4).map((post,i)=><ArticleCard title={post.data.title} description={post.data.description} href={`/posts/${post.slug}`} image={post.data.heroImage} category={post.data.category} pubDate={post.data.pubDate} index={i+1} />)}</div></section>}
+  <section class="section wrap"><div class="tools-band reveal"><span class="eyebrow">Decision tools</span><h2 class="h-xl serif" style="margin-top:14px;max-width:12ch">Measure before you buy.</h2><div class="tools-grid"><a class="tool-card" href="/compatibility-checker/"><span class="ti">✓</span><h3>Compatibility Checker</h3><p>Check controller and device constraints before mixing Matter, Thread, Zigbee, and Wi‑Fi.</p><span class="go">Open checker →</span></a><a class="tool-card" href="/energy-calculator/"><span class="ti">$</span><h3>Energy Calculator</h3><p>Estimate kWh, cost, CO₂, and rough payback for smart energy measures.</p><span class="go">Run numbers →</span></a><a class="tool-card" href="/starter-kit-builder/"><span class="ti">◇</span><h3>Starter Kit Builder</h3><p>Build a realistic kit by budget, ecosystem, and safety constraints.</p><span class="go">Build kit →</span></a></div></div></section>
+  <section class="section wrap"><div class="section-label reveal">¶ Section 02 — Recent</div><div class="recent-list">{recentPosts.map((post,i)=><a class="recent-row" href={`/posts/${post.slug}`}><span class="rn">{String(i+5).padStart(2,'0')}</span><span class="rt">{post.data.title}</span><span class="rmeta"><span>{post.data.category}</span><span>·</span><time>{post.data.pubDate.toLocaleDateString('en-US',{month:'short',day:'numeric'})}</time></span></a>)}</div></section>
+  <section class="section wrap"><div class="section-label reveal">¶ Section 03 — Categories</div><div class="cat-grid">{categories.map((cat,i)=><a class="cat-tile" href={`/category/${cat.toLowerCase().trim().replace(/\s+/g,'-')}/`}><span class="cn">№ {String(i+1).padStart(2,'0')}</span><h3>{cat}</h3><span class="cc">{catCounts[cat]} guides →</span></a>)}</div></section>
 </BaseLayout>
