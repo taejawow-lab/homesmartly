@@ -9,7 +9,7 @@ const categories = [...new Set(posts.map((p)=>p.data.category).filter(Boolean))]
 const catCounts = Object.fromEntries(categories.map((c)=>[c, posts.filter((p)=>p.data.category===c).length]));
 const siteDescription = import.meta.env.PUBLIC_SITE_DESCRIPTION || 'Smart home devices aggregated from manufacturer specs, measurements, and long-term user data.';
 ---
-<BaseLayout title="Home" description={siteDescription} active="">
+<BaseLayout title="Measured Smart Home Device Guides" description={siteDescription} active="">
   <section class="hero" data-screen-label="Home / Hero">
     <div class="wrap hero-grid">
       <div class="reveal in">
