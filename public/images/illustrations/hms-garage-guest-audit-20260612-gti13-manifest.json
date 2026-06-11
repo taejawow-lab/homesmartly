@@ -1,0 +1,155 @@
+{
+  "date": "2026-06-12",
+  "site": "homesmartly",
+  "slug": "smart-garage-door-opener-guest-access-audit-2026",
+  "host": "gti13",
+  "endpoint": "http://192.168.50.29:8188",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-garage-guest-audit-20260612-hero.png",
+      "bytes": 1635174,
+      "prompt": "tidy residential garage entrance with closed door and smart opener unit, blank wall controls, no text",
+      "seed": 202606120000,
+      "prompt_id": "52a34c69-c0aa-4169-900f-821847211207",
+      "raw_output": {
+        "filename": "hermes_batchb_20260612_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, receipt, form, invoice, login screen, calendar grid"
+      }
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-garage-guest-audit-20260612-01.png",
+      "bytes": 1265409,
+      "prompt": "adult reviewing garage access on blank dark phone beside closed garage door, no readable screen",
+      "seed": 202606120001,
+      "prompt_id": "3ca46545-c91f-43a0-9a98-e957574af0d7",
+      "raw_output": {
+        "filename": "hermes_batchb_20260612_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, receipt, form, invoice, login screen, calendar grid"
+      }
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-garage-guest-audit-20260612-02.png",
+      "bytes": 1390937,
+      "prompt": "small tray with spare house key and blank temporary access card near entry door, no writing",
+      "seed": 202606120002,
+      "prompt_id": "7ccbedfd-01f4-44f4-b1d0-ce2275fa3e16",
+      "raw_output": {
+        "filename": "hermes_batchb_20260612_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, receipt, form, invoice, login screen, calendar grid"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-garage-guest-audit-20260612-03.png",
+      "bytes": 2304240,
+      "prompt": "closed garage side wall with a plain covered access box, no visible buttons, no numbers, no labels, neutral stucco wall",
+      "seed": 202606129000,
+      "prompt_id": "258a3764-9f86-47ab-b0bd-fb20c108a13b",
+      "raw_output": {
+        "filename": "hermes_batchb_20260612_regen_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 4.8,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, license plate, dashboard, form, receipt, invoice, calendar grid, handwriting, printed document, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, blurry, low resolution, generic stock art, placeholder"
+      },
+      "regenerated": true
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-garage-guest-audit-20260612-04.png",
+      "bytes": 1461055,
+      "prompt": "organized garage packing scene with closed vehicle side cropped away from license plate, plain cardboard boxes, no people faces, no readable marks",
+      "seed": 202606129001,
+      "prompt_id": "72106a4b-db80-4a7b-9ed1-408ab6ad22a3",
+      "raw_output": {
+        "filename": "hermes_batchb_20260612_regen_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 4.8,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, license plate, dashboard, form, receipt, invoice, calendar grid, handwriting, printed document, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, blurry, low resolution, generic stock art, placeholder"
+      },
+      "regenerated": true
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-garage-guest-audit-20260612-05.png",
+      "bytes": 1750105,
+      "prompt": "garage access maintenance still life with two plain face-down black remote fobs, blank white cards, loose batteries, no buttons visible, no labels, no printed paper, no text",
+      "seed": 202606129000,
+      "prompt_id": "669392b7-d931-443c-aba3-3fa62725bfc1",
+      "raw_output": {
+        "filename": "hermes_batchb_20260612_regen_homesmartly_05_00002_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 4.8,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, license plate, dashboard, form, receipt, invoice, calendar grid, handwriting, printed document, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, blurry, low resolution, generic stock art, placeholder"
+      },
+      "regenerated": true
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260612-homesmartly-final-contact-sheet.jpg",
+  "visual_qa": "passed parent visual contact-sheet inspection after regeneration where needed; retained 6 GTI13 raster images with no readable text/logos/screens or safety-blocking defects",
+  "adsense_readiness": "source-backed practical guide, 8 citations, internal links, FAQ/schema, no affiliate filler, GTI13 provenance committed"
+}
