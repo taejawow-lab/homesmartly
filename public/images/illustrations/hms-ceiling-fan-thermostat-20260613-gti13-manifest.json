@@ -1,0 +1,204 @@
+{
+  "date": "2026-06-13",
+  "site": "homesmartly",
+  "slug": "smart-ceiling-fan-thermostat-summer-comfort-plan-2026",
+  "host": "gti13",
+  "endpoint": "direct-gti13-comfyui-redacted",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-ceiling-fan-thermostat-20260613-hero.png",
+      "url": "/images/illustrations/hms-ceiling-fan-thermostat-20260613-hero.png",
+      "bytes": 1289239,
+      "width": 1536,
+      "height": 864,
+      "prompt": "living room ceiling fan running gently with smart thermostat on wall, blank display no numbers no logos",
+      "seed": 202606130000,
+      "prompt_id": "6324e95c-d4de-4f9c-867f-b0bf79e385c7",
+      "raw_output": {
+        "filename": "hermes_batchb_20260613_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, readable calendar, forms, receipts, documents, child face closeup, license plate, brand marks"
+      }
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-ceiling-fan-thermostat-20260613-01.png",
+      "url": "/images/illustrations/hms-ceiling-fan-thermostat-20260613-01.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1663518,
+      "prompt": "plain unmarked wall thermostat with completely blank dark display beside ceiling fan room, no buttons with numbers, no text",
+      "seed": 202606139101,
+      "prompt_id": "51816447-3a23-4e88-9da1-36bda6223668",
+      "raw_output": {
+        "filename": "hermes_batchb_20260613_regen_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "qa_regenerated_final": true,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 32,
+        "cfg": 4.4,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand, labels, screen text, fake UI, calendar, document writing, forms, receipts, readable book page, distorted hands, people faces, unsafe wiring, placeholder, cartoon, low quality, office desk unrelated scene, plant macro, outdoor nature macro"
+      }
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-ceiling-fan-thermostat-20260613-02.png",
+      "url": "/images/illustrations/hms-ceiling-fan-thermostat-20260613-02.png",
+      "bytes": 1577059,
+      "width": 1536,
+      "height": 864,
+      "prompt": "bedroom night routine with ceiling fan, light bedding, closed curtains, no text",
+      "seed": 202606130002,
+      "prompt_id": "3ec4b845-c39d-4443-9573-acc3da9d2a7e",
+      "raw_output": {
+        "filename": "hermes_batchb_20260613_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, readable calendar, forms, receipts, documents, child face closeup, license plate, brand marks"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-ceiling-fan-thermostat-20260613-03.png",
+      "url": "/images/illustrations/hms-ceiling-fan-thermostat-20260613-03.png",
+      "bytes": 1315165,
+      "width": 1536,
+      "height": 864,
+      "prompt": "home sensor placed on side table away from sun and vents, blank device no numbers",
+      "seed": 202606130003,
+      "prompt_id": "d217a074-5a5b-4f15-a166-14caffac591d",
+      "raw_output": {
+        "filename": "hermes_batchb_20260613_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, readable calendar, forms, receipts, documents, child face closeup, license plate, brand marks"
+      }
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-ceiling-fan-thermostat-20260613-04.png",
+      "url": "/images/illustrations/hms-ceiling-fan-thermostat-20260613-04.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 2223564,
+      "prompt": "adult hand near a plain unmarked wall light switch and face down blank fan remote, no numbers no text no labels",
+      "seed": 202606139104,
+      "prompt_id": "2af0c1d5-3ea0-4d2c-b6e8-fca9c0a302b4",
+      "raw_output": {
+        "filename": "hermes_batchb_20260613_regen_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "qa_regenerated_final": true,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 32,
+        "cfg": 4.4,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand, labels, screen text, fake UI, calendar, document writing, forms, receipts, readable book page, distorted hands, people faces, unsafe wiring, placeholder, cartoon, low quality, office desk unrelated scene, plant macro, outdoor nature macro"
+      }
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-ceiling-fan-thermostat-20260613-05.png",
+      "url": "/images/illustrations/hms-ceiling-fan-thermostat-20260613-05.png",
+      "bytes": 1809393,
+      "width": 1536,
+      "height": 864,
+      "prompt": "summer afternoon room with shaded windows and ceiling fan airflow, no screens no labels",
+      "seed": 202606130005,
+      "prompt_id": "1a42ef0c-8d26-4ae6-b97c-14eea80545ba",
+      "raw_output": {
+        "filename": "hermes_batchb_20260613_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, readable calendar, forms, receipts, documents, child face closeup, license plate, brand marks"
+      }
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260613-homesmartly-contact-sheet.jpg",
+  "visual_qa": "final contact sheet reviewed after regeneration; rejected text/mismatch panels replaced",
+  "source_validation": [
+    {
+      "url": "https://www.energy.gov/energysaver/ceiling-fans",
+      "ok": false,
+      "error": "<HTTPError 404: 'Not Found'>",
+      "caveat": "script-client check failed; source kept only if authoritative"
+    },
+    {
+      "url": "https://www.energy.gov/energysaver/thermostats",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.energystar.gov/products/smart_thermostats",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.cdc.gov/heat-health/about/index.html",
+      "ok": false,
+      "error": "URLError(gaierror(-3, 'Temporary failure in name resolution'))",
+      "caveat": "script-client check failed; source kept only if authoritative"
+    },
+    {
+      "url": "https://www.ready.gov/heat",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.energy.gov/energysaver/home-cooling-systems",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.epa.gov/indoor-air-quality-iaq/introduction-indoor-air-quality",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "url": "https://www.esfi.org/home-electrical-safety/",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "adsense_readiness": "8 sources, internal links, FAQ/schema, no affiliate filler, helpful-content practical workflow"
+}
