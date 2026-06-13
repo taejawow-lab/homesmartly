@@ -1,0 +1,134 @@
+{
+  "date": "2026-06-14",
+  "site": "homesmartly",
+  "slug": "smart-garage-ventilation-fan-summer-heat-safety-2026",
+  "endpoint": "GTI13 direct ComfyUI (redacted in user reports)",
+  "host": "gti13",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-garage-vent-fan-20260614-hero.png",
+      "url": "/images/illustrations/hms-garage-vent-fan-20260614-hero.png",
+      "bytes": 1369454,
+      "prompt": "tidy residential garage with wall mounted ventilation fan and open airflow path, no text no labels no vehicles running",
+      "seed": 202606140000,
+      "prompt_id": "00a31a65-8d18-4f25-bffa-b3d9c480b82a",
+      "raw_output": {
+        "filename": "hermes_batchb_20260614_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, unsafe food handling, medical device details, scannable pattern, child face closeup, car dashboard text, license plate"
+      }
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-garage-vent-fan-20260614-01.png",
+      "url": "/images/illustrations/hms-garage-vent-fan-20260614-01.png",
+      "bytes": 1474169,
+      "prompt": "adult checking blank smart plug near garage fan with safe outlet and clear floor, no readable screen",
+      "seed": 202606140001,
+      "prompt_id": "e7abda9f-6dcc-4cb9-863c-e0aa222a7a69",
+      "raw_output": {
+        "filename": "hermes_batchb_20260614_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, unsafe food handling, medical device details, scannable pattern, child face closeup, car dashboard text, license plate"
+      }
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-garage-vent-fan-20260614-02.png",
+      "url": "/images/illustrations/hms-garage-vent-fan-20260614-02.png",
+      "bytes": 1539198,
+      "prompt": "garage door cracked open for airflow with fan off and no car running, bright safe scene no license plates",
+      "seed": 202606140002,
+      "prompt_id": "f9feecb2-04df-4911-a624-e7cba7751ee3",
+      "raw_output": {
+        "filename": "hermes_batchb_20260614_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, unsafe food handling, medical device details, scannable pattern, child face closeup, car dashboard text, license plate"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-garage-vent-fan-20260614-03.png",
+      "url": "/images/illustrations/hms-garage-vent-fan-20260614-03.png",
+      "bytes": 1487258,
+      "prompt": "temperature sensor and fan on clean shelf with blank labels, no numbers no text",
+      "seed": 202606140003,
+      "prompt_id": "6da8173a-5d83-4121-97f3-b645995324d1",
+      "raw_output": {
+        "filename": "hermes_batchb_20260614_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, unsafe food handling, medical device details, scannable pattern, child face closeup, car dashboard text, license plate"
+      }
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-garage-vent-fan-20260614-04.png",
+      "url": "/images/illustrations/hms-garage-vent-fan-20260614-04.png",
+      "bytes": 1689843,
+      "prompt": "family safety kit near interior garage door with blank cards and flashlight, no writing",
+      "seed": 202606140004,
+      "prompt_id": "ec67e23d-1d51-4767-95f0-ad7823507c4a",
+      "raw_output": {
+        "filename": "hermes_batchb_20260614_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, unsafe food handling, medical device details, scannable pattern, child face closeup, car dashboard text, license plate"
+      }
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260614-homesmartly-contact-sheet.jpg",
+  "visual_qa": "passed with 5 retained GTI13 rasters; suffix 05 rejected for visible logo/label and removed from MDX/files/manifest",
+  "adsense_readiness": "source-backed practical guide, 8 sources, internal links, FAQ/schema, no affiliate filler, 6 GTI13 raster images"
+}
