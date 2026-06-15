@@ -1,0 +1,146 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-door-lock-battery-summer-travel-keypad-backup-2026",
+  "date": "2026-06-16",
+  "generator": "GTI13 direct ComfyUI",
+  "dimensions": [
+    1536,
+    864
+  ],
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-door-lock-battery-20260616-hero.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 897488,
+      "prompt": "front door with simple smart deadbolt and completely blank covered touch panel, no visible keypad, no digits, key on plain tray inside entry, security blog hero",
+      "negative": "text, words, letters, numbers, watermark, logo, brand, readable labels, screen text, fake ui, QR code, barcode, keypad digits, exposed wiring, unsafe knife, blade at table edge, raw meat, forms, documents with writing, calendar, blurry, distorted, clutter",
+      "seed": 202606169001,
+      "prompt_id": "4c355c95-c929-4bd8-8f47-3ac3c7415e6e",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "cfg": 4.6,
+      "steps": 30,
+      "endpoint_host": "gti13 direct ComfyUI",
+      "raw_output": {
+        "filename": "hermes_batchb_20260616_regen_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "qa_regenerated_final": true
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-door-lock-battery-20260616-01.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1586751,
+      "prompt": "adult replacing batteries on an indoor smart lock module on a table, blank labels no text",
+      "negative": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, credentials, login screen, currency, forms, receipts, calendar grid, child face closeup",
+      "seed": 202606160001,
+      "prompt_id": "3899a09a-930d-4607-9dc1-b67b8331737a",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "cfg": 5.0,
+      "steps": 28,
+      "endpoint_host": "gti13 direct ComfyUI",
+      "raw_output": {
+        "filename": "hermes_batchb_20260616_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-door-lock-battery-20260616-02.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1832771,
+      "prompt": "travel preparation table with physical key, blank phone face down, plain envelope, no writing",
+      "negative": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, credentials, login screen, currency, forms, receipts, calendar grid, child face closeup",
+      "seed": 202606160002,
+      "prompt_id": "11b6e458-9f97-4a93-af23-3d464356a4bb",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "cfg": 5.0,
+      "steps": 28,
+      "endpoint_host": "gti13 direct ComfyUI",
+      "raw_output": {
+        "filename": "hermes_batchb_20260616_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-door-lock-battery-20260616-03.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1433356,
+      "prompt": "family entryway with door lock and shoe bench, warm safe lighting, no readable keypad",
+      "negative": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, credentials, login screen, currency, forms, receipts, calendar grid, child face closeup",
+      "seed": 202606160003,
+      "prompt_id": "559ba018-1d25-4a61-981d-c9f0f5e02225",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "cfg": 5.0,
+      "steps": 28,
+      "endpoint_host": "gti13 direct ComfyUI",
+      "raw_output": {
+        "filename": "hermes_batchb_20260616_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-door-lock-battery-20260616-04.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1368325,
+      "prompt": "guest access handoff scene with blank cards and sealed key pouch, no text no logos",
+      "negative": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, credentials, login screen, currency, forms, receipts, calendar grid, child face closeup",
+      "seed": 202606160004,
+      "prompt_id": "bb473000-73e3-471a-b305-8be7bdaded00",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "cfg": 5.0,
+      "steps": 28,
+      "endpoint_host": "gti13 direct ComfyUI",
+      "raw_output": {
+        "filename": "hermes_batchb_20260616_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-door-lock-battery-20260616-05.png",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1688139,
+      "prompt": "maintenance scene with lock manual closed, fresh batteries in plain container, no labels",
+      "negative": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged cords, warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, credentials, login screen, currency, forms, receipts, calendar grid, child face closeup",
+      "seed": 202606160005,
+      "prompt_id": "281ccb44-0902-490f-99c8-3481c242ae3c",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "cfg": 5.0,
+      "steps": 28,
+      "endpoint_host": "gti13 direct ComfyUI",
+      "raw_output": {
+        "filename": "hermes_batchb_20260616_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    }
+  ]
+}
