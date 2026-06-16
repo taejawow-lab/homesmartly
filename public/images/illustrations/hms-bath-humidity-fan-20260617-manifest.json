@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-06-16T22:17:21Z",
+  "batch": "B 20260617 cron",
+  "date": "2026-06-17",
+  "host": "gti13",
+  "direct_comfyui": true,
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "width": 1536,
+  "height": 864,
+  "workflow": {
+    "steps": 24,
+    "cfg": 5.1,
+    "sampler": "dpmpp_2m",
+    "scheduler": "karras",
+    "negative_prompt": "text, words, letters, numbers, logo, watermark, brand name, readable labels, screen text, UI screenshot, distorted interface, fake labels, bad hands, bad anatomy, extra fingers, low quality, blurry, cartoon, placeholder, generic stock art, calendar grid, handwriting, QR code, payment screen, login form, medical chart text, unsafe posture, raw meat beside produce, unsafe wiring, exposed wires, vehicle dashboard numbers, road sign text, brand marks, product packaging labels, price tags, receipts, forms, calculators, license plates, warning labels"
+  },
+  "finalized_at": "2026-06-16T22:26:26Z",
+  "site": "homesmartly",
+  "slug": "smart-bathroom-humidity-fan-timer-mold-prevention-routine-2026",
+  "title": "Smart Bathroom Humidity Fan Timer Mold Prevention Routine",
+  "assets": [
+    {
+      "file": "public/images/illustrations/hms-bath-humidity-fan-20260617-hero.png",
+      "filename": "hms-bath-humidity-fan-20260617-hero.png",
+      "prompt": "realistic clean bathroom ventilation planning scene with ceiling fan grille, humidity sensor on shelf, blank dark phone, no labels, no steam text, no mold closeup",
+      "seed": 202606172001,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "67a32169-a59e-4df2-815e-3e996340f370",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260617_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1269573,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "steps": 24,
+      "cfg": 5.1,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    {
+      "file": "public/images/illustrations/hms-bath-humidity-fan-20260617-01.png",
+      "filename": "hms-bath-humidity-fan-20260617-01.png",
+      "prompt": "realistic bathroom humidity sensor placement on dry shelf with towel and fan vent visible, no readable text no labels",
+      "seed": 202606172002,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "556a748a-cc16-477e-acaf-9342556129f7",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260617_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1540821,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "steps": 24,
+      "cfg": 5.1,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    {
+      "file": "public/images/illustrations/hms-bath-humidity-fan-20260617-02.png",
+      "filename": "hms-bath-humidity-fan-20260617-02.png",
+      "prompt": "realistic clean shower area after use with fan running metaphor, dry floor, no people, no labels",
+      "seed": 202606172003,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "8c878351-5aae-4ede-b668-f6196ca91e08",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260617_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1516432,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "steps": 24,
+      "cfg": 5.1,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    {
+      "file": "public/images/illustrations/hms-bath-humidity-fan-20260617-03.png",
+      "filename": "hms-bath-humidity-fan-20260617-03.png",
+      "prompt": "realistic bathroom door airflow setup with small gap, towel hung to dry, no text no brands",
+      "seed": 202606172004,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "310586e6-f9f5-4c1f-9511-9421f3700f18",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260617_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1185312,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "steps": 24,
+      "cfg": 5.1,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    {
+      "file": "public/images/illustrations/hms-bath-humidity-fan-20260617-04.png",
+      "filename": "hms-bath-humidity-fan-20260617-04.png",
+      "prompt": "realistic bathroom exhaust fan grille maintenance scene with plain step stool, clean ceiling vent grille, no ceiling fan blades, no exposed wiring, no labels, no text",
+      "seed": 202606173001,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "5183e873-562a-4d6c-af52-0f1c6a6a19ac",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260617_final_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok-regenerated",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1488037,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "steps": 26,
+      "cfg": 4.8,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    },
+    {
+      "file": "public/images/illustrations/hms-bath-humidity-fan-20260617-05.png",
+      "filename": "hms-bath-humidity-fan-20260617-05.png",
+      "prompt": "realistic clean bathroom humidity routine still life on dry vanity with plain folded towel, small white sensor, blank sealed envelope, keys, no phone, no electronics, no labels, no text",
+      "seed": 202606174001,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "eaa67ea3-6f9e-4597-b870-48c0290af6cf",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260617_final2_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok-regenerated-final2",
+      "width": 1536,
+      "height": 864,
+      "bytes": 1048127,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "steps": 28,
+      "cfg": 4.4,
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras"
+    }
+  ],
+  "visual_qa_summary": "Final2 contact sheet regenerated after contact-sheet QA; accepted assets are the final published set.",
+  "contact_sheet_final2": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260617-homesmartly-contact-sheet-final2.jpg"
+}
