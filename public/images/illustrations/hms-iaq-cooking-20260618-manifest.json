@@ -1,0 +1,115 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-indoor-air-quality-sensor-cooking-ventilation-routine-2026",
+  "date": "2026-06-18",
+  "assets": [
+    {
+      "filename": "hms-iaq-cooking-20260618-hero.png",
+      "path": "public/images/illustrations/hms-iaq-cooking-20260618-hero.png",
+      "url": "/images/illustrations/hms-iaq-cooking-20260618-hero.png",
+      "prompt": "tidy modern kitchen with compact air quality sensor on counter and range hood running, blank sensor face no numbers",
+      "seed": 618000,
+      "prompt_id": "f4eb9ded-e86e-4828-83de-39dbbf5f1a92",
+      "width": 1536,
+      "height": 864,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "endpoint_host": "gti13 direct ComfyUI",
+      "comfy_meta": {
+        "filename": "hms-iaq-cooking-20260618-hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-iaq-cooking-20260618-01.png",
+      "path": "public/images/illustrations/hms-iaq-cooking-20260618-01.png",
+      "url": "/images/illustrations/hms-iaq-cooking-20260618-01.png",
+      "prompt": "adult opening a nearby window after cooking while phone lies face down on counter, no screen text",
+      "seed": 618001,
+      "prompt_id": "64637bee-1d52-46b7-bf35-9b7f80df18d8",
+      "width": 1536,
+      "height": 864,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "endpoint_host": "gti13 direct ComfyUI",
+      "comfy_meta": {
+        "filename": "hms-iaq-cooking-20260618-01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-iaq-cooking-20260618-02.png",
+      "path": "public/images/illustrations/hms-iaq-cooking-20260618-02.png",
+      "url": "/images/illustrations/hms-iaq-cooking-20260618-02.png",
+      "prompt": "family meal prep with pot lids and clear counter, hood light glow but no readable controls",
+      "seed": 618002,
+      "prompt_id": "d91198c4-cab0-4a9f-8ed9-b95689ae7100",
+      "width": 1536,
+      "height": 864,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "endpoint_host": "gti13 direct ComfyUI",
+      "comfy_meta": {
+        "filename": "hms-iaq-cooking-20260618-02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-iaq-cooking-20260618-03.png",
+      "path": "public/images/illustrations/hms-iaq-cooking-20260618-03.png",
+      "url": "/images/illustrations/hms-iaq-cooking-20260618-03.png",
+      "prompt": "small tabletop air quality monitor beside plant and closed notebook, blank display no numbers",
+      "seed": 618003,
+      "prompt_id": "71d00515-f7e5-49f2-901f-9369e447ba16",
+      "width": 1536,
+      "height": 864,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "endpoint_host": "gti13 direct ComfyUI",
+      "comfy_meta": {
+        "filename": "hms-iaq-cooking-20260618-03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-iaq-cooking-20260618-04.png",
+      "path": "public/images/illustrations/hms-iaq-cooking-20260618-04.png",
+      "url": "/images/illustrations/hms-iaq-cooking-20260618-04.png",
+      "prompt": "safe kitchen evening reset with exhaust fan, wiped stovetop, no flames, no text labels",
+      "seed": 618004,
+      "prompt_id": "7493fff4-8766-472b-b917-cf1dd4ef95b1",
+      "width": 1536,
+      "height": 864,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "endpoint_host": "gti13 direct ComfyUI",
+      "comfy_meta": {
+        "filename": "hms-iaq-cooking-20260618-04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-iaq-cooking-20260618-05.png",
+      "path": "public/images/illustrations/hms-iaq-cooking-20260618-05.png",
+      "url": "/images/illustrations/hms-iaq-cooking-20260618-05.png",
+      "prompt": "calm smart home scene showing sensor, fan, and window as separate zones, blank devices no UI",
+      "seed": 618005,
+      "prompt_id": "907eb760-377b-44c8-b824-0e02d339a627",
+      "width": 1536,
+      "height": 864,
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "endpoint_host": "gti13 direct ComfyUI",
+      "comfy_meta": {
+        "filename": "hms-iaq-cooking-20260618-05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    }
+  ],
+  "gate_reason": "sentinel_unreachable_but_direct_comfyui_ok",
+  "endpoint_host": "gti13 direct ComfyUI",
+  "dimensions": [
+    1536,
+    864
+  ]
+}
