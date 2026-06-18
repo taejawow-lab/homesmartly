@@ -1,0 +1,78 @@
+{
+  "host": "gti13",
+  "endpoint": "direct ComfyUI redacted",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": [
+    1536,
+    864
+  ],
+  "date": "2026-06-19",
+  "assets": [
+    {
+      "filename": "hms-mailbox-package-20260619-hero.png",
+      "prompt": "rainy front entry with closed mailbox and sheltered package area, smart sensor implied, no text",
+      "seed": 620100,
+      "prompt_id": "58e14d8a-4db2-44d9-900b-2bf85d4238bc",
+      "comfy_meta": {
+        "filename": "hms-mailbox-package-20260619_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-mailbox-package-20260619-01.png",
+      "prompt": "adult checking blank phone beside indoor key tray after delivery alert, no readable screen",
+      "seed": 620101,
+      "prompt_id": "146926ea-c6b9-4aae-90ba-7898bc9cd680",
+      "comfy_meta": {
+        "filename": "hms-mailbox-package-20260619_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-mailbox-package-20260619-02.png",
+      "prompt": "covered porch package pickup routine with umbrella and dry mat, no brand labels",
+      "seed": 620102,
+      "prompt_id": "5e942039-f1db-449e-b6bb-797959e736fd",
+      "comfy_meta": {
+        "filename": "hms-mailbox-package-20260619_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-mailbox-package-20260619-03.png",
+      "prompt": "neighbor friendly entry camera angle showing only doorstep and path, no people faces",
+      "seed": 620103,
+      "prompt_id": "77a75415-b259-4992-b115-4b21d06241da",
+      "comfy_meta": {
+        "filename": "hms-mailbox-package-20260619_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-mailbox-package-20260619-04.png",
+      "prompt": "sealed plastic bin under porch roof with clean package handoff scene, blank labels",
+      "seed": 620104,
+      "prompt_id": "f3faeea9-34bd-4d0c-a4f3-a7a0919ad7e1",
+      "comfy_meta": {
+        "filename": "hms-mailbox-package-20260619_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    },
+    {
+      "filename": "hms-mailbox-package-20260619-05.png",
+      "prompt": "family mudroom package drying station with towel mat and closed mailbox key bowl, no text",
+      "seed": 620105,
+      "prompt_id": "7697ded4-cc76-445a-9b8a-fa49b80abbef",
+      "comfy_meta": {
+        "filename": "hms-mailbox-package-20260619_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      }
+    }
+  ]
+}
