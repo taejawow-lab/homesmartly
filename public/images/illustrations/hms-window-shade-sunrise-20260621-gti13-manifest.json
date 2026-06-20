@@ -1,0 +1,154 @@
+{
+  "date": "2026-06-21",
+  "site": "homesmartly",
+  "slug": "smart-window-shade-sunrise-heat-routine-2026",
+  "endpoint": "GTI13 direct ComfyUI",
+  "host": "gti13",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-window-shade-sunrise-20260621-hero.png",
+      "bytes": 1640692,
+      "prompt": "smart window shade partially open at sunrise in calm living room no text no logos",
+      "seed": 202606210000,
+      "prompt_id": "47090053-8563-4525-96c1-ebc5d982a7ee",
+      "raw_output": {
+        "filename": "hermes_batchb_20260621_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, fake warning sign, blurry, low resolution, generic stock art, placeholder, child face closeup, currency, forms, receipts, calculator"
+      }
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-window-shade-sunrise-20260621-01.png",
+      "bytes": 1451052,
+      "prompt": "plain wall switch for motorized shade beside tidy window no labels",
+      "seed": 202606210001,
+      "prompt_id": "8467197a-603a-4e16-97c9-e1faff92fe5d",
+      "raw_output": {
+        "filename": "hermes_batchb_20260621_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, fake warning sign, blurry, low resolution, generic stock art, placeholder, child face closeup, currency, forms, receipts, calculator"
+      }
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-window-shade-sunrise-20260621-02.png",
+      "bytes": 1466054,
+      "prompt": "sunny room with shaded window reducing glare on blank dark laptop screen no UI",
+      "seed": 202606210002,
+      "prompt_id": "cbf7388b-8a1b-41ec-9422-4e336c9a8540",
+      "raw_output": {
+        "filename": "hermes_batchb_20260621_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, fake warning sign, blurry, low resolution, generic stock art, placeholder, child face closeup, currency, forms, receipts, calculator"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-window-shade-sunrise-20260621-03.png",
+      "bytes": 2280286,
+      "prompt": "privacy safe evening shade setting viewed from inside no faces no text",
+      "seed": 202606210003,
+      "prompt_id": "9091e0be-f2ef-4db1-bb59-27ac3b331289",
+      "raw_output": {
+        "filename": "hermes_batchb_20260621_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, fake warning sign, blurry, low resolution, generic stock art, placeholder, child face closeup, currency, forms, receipts, calculator"
+      }
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-window-shade-sunrise-20260621-04.png",
+      "bytes": 1197203,
+      "prompt": "cordless motorized shade bottom rail and plain manual wall control, no child, no cords, no text",
+      "seed": 202606219059,
+      "prompt_id": "c1a760f0-8659-4359-877c-5356b778abfb",
+      "raw_output": {
+        "filename": "hermes_batchb_20260621_regen_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, unsafe scene, exposed wiring, fake warning sign, blurry, low resolution, generic stock art, placeholder, child, face, people close up, clock numbers, calendar grid, forms, receipts, currency, calculator"
+      },
+      "regenerated_after_visual_qa": true
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-window-shade-sunrise-20260621-05.png",
+      "bytes": 1352470,
+      "prompt": "summer heat routine with closed shades and fan in minimalist room no labels",
+      "seed": 202606210005,
+      "prompt_id": "7aad9deb-d646-4080-a1f6-4bef00460e78",
+      "raw_output": {
+        "filename": "hermes_batchb_20260621_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, fake warning sign, blurry, low resolution, generic stock art, placeholder, child face closeup, currency, forms, receipts, calculator"
+      }
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260621-homesmartly-contact-sheet-final.jpg",
+  "windows_contact_sheet": "/mnt/c/Users/k8plus/AppData/Local/hermes/scripts/batch-b-20260621-homesmartly-contact-sheet-final.jpg",
+  "visual_qa": "final contact sheet regenerated after rejecting unsafe/text/topic-mismatch images",
+  "adsense_readiness": "8 citations, internal links, FAQ/schema, no affiliate filler"
+}
