@@ -91,27 +91,6 @@
     {
       "site": "homesmartly",
       "slug": "smart-home-power-outage-router-backup-routine-2026",
-      "filename": "hms-router-backup-20260622-04.png",
-      "file": "public/images/illustrations/hms-router-backup-20260622-04.png",
-      "alt": "Safe charging station after storm without wet cables",
-      "prompt": "realistic indoor charging station on dry counter with battery pack, router nearby, cables neat, no text, no logos, no water",
-      "seed": 202606220205,
-      "dimensions": [
-        1536,
-        864
-      ],
-      "prompt_id": "e3bd55fe-ecb0-41fd-986f-fca1121cf4d7",
-      "comfy_output": {
-        "filename": "hermes_batch_b_20260622_00011_.png",
-        "subfolder": "",
-        "type": "output"
-      },
-      "status": "ok",
-      "bytes": 1421954
-    },
-    {
-      "site": "homesmartly",
-      "slug": "smart-home-power-outage-router-backup-routine-2026",
       "filename": "hms-router-backup-20260622-05.png",
       "file": "public/images/illustrations/hms-router-backup-20260622-05.png",
       "alt": "Weekly network backup review with blank app screen",
@@ -132,5 +111,6 @@
     }
   ],
   "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260622-gti13-contact-sheet.jpg",
-  "visual_qa": "pending parent visual inspection before final report"
+  "visual_qa": "Final QA excluded one generated image: visual QA rejected small device label/screen-like marking in image 04. Published article renders 5 accepted GTI13 raster images.",
+  "published_visuals_count": 5
 }
