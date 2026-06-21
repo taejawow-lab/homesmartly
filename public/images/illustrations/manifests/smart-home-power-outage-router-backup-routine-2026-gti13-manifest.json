@@ -1,0 +1,136 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-home-power-outage-router-backup-routine-2026",
+  "host": "gti13",
+  "endpoint": "http://192.168.50.29:8188",
+  "assets": [
+    {
+      "site": "homesmartly",
+      "slug": "smart-home-power-outage-router-backup-routine-2026",
+      "filename": "hms-router-backup-20260622-hero.png",
+      "file": "public/images/illustrations/hms-router-backup-20260622-hero.png",
+      "alt": "Smart home router backup routine desk",
+      "prompt": "premium realistic editorial photo of a home router and modem on a ventilated shelf with compact battery backup, blank phone face down, tidy cables, natural light, no readable text, no logos, no wet electronics",
+      "seed": 202606220201,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "37cec2cc-159a-44e8-ac89-2030fc0483ab",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260622_00007_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "bytes": 1590379
+    },
+    {
+      "site": "homesmartly",
+      "slug": "smart-home-power-outage-router-backup-routine-2026",
+      "filename": "hms-router-backup-20260622-01.png",
+      "file": "public/images/illustrations/hms-router-backup-20260622-01.png",
+      "alt": "Ventilated router shelf with safe power layout",
+      "prompt": "realistic utility shelf with router, modem, small battery unit, cable clips, open airflow, no labels, no text, no logos",
+      "seed": 202606220202,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "31f6bb17-fedc-4da2-a593-69a0e4ebe7a3",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260622_00008_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "bytes": 1199491
+    },
+    {
+      "site": "homesmartly",
+      "slug": "smart-home-power-outage-router-backup-routine-2026",
+      "filename": "hms-router-backup-20260622-02.png",
+      "file": "public/images/illustrations/hms-router-backup-20260622-02.png",
+      "alt": "Family emergency connectivity kit without fake screens",
+      "prompt": "realistic table with router backup checklist as blank cards, flashlight, battery bank, phone dark screen, no readable text, no logos",
+      "seed": 202606220203,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "69c31400-d641-4cba-8ac1-2b61e5b2c5fb",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260622_00009_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "bytes": 1394544
+    },
+    {
+      "site": "homesmartly",
+      "slug": "smart-home-power-outage-router-backup-routine-2026",
+      "filename": "hms-router-backup-20260622-03.png",
+      "file": "public/images/illustrations/hms-router-backup-20260622-03.png",
+      "alt": "Power outage test setup with router and notebook",
+      "prompt": "realistic home office corner with router, modem, battery backup, closed notebook, timer turned away, no numbers, no words, no logos",
+      "seed": 202606220204,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "de5c23f2-4f13-4fac-94a8-c33ed6cc9d39",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260622_00010_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "bytes": 1231448
+    },
+    {
+      "site": "homesmartly",
+      "slug": "smart-home-power-outage-router-backup-routine-2026",
+      "filename": "hms-router-backup-20260622-04.png",
+      "file": "public/images/illustrations/hms-router-backup-20260622-04.png",
+      "alt": "Safe charging station after storm without wet cables",
+      "prompt": "realistic indoor charging station on dry counter with battery pack, router nearby, cables neat, no text, no logos, no water",
+      "seed": 202606220205,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "e3bd55fe-ecb0-41fd-986f-fca1121cf4d7",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260622_00011_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "bytes": 1421954
+    },
+    {
+      "site": "homesmartly",
+      "slug": "smart-home-power-outage-router-backup-routine-2026",
+      "filename": "hms-router-backup-20260622-05.png",
+      "file": "public/images/illustrations/hms-router-backup-20260622-05.png",
+      "alt": "Weekly network backup review with blank app screen",
+      "prompt": "realistic desk with phone blank screen, router status lights abstract, sealed manual folder, no text, no logos",
+      "seed": 202606220206,
+      "dimensions": [
+        1536,
+        864
+      ],
+      "prompt_id": "f8794a6e-368f-4deb-9eb9-b592efa1f898",
+      "comfy_output": {
+        "filename": "hermes_batch_b_20260622_00012_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "status": "ok",
+      "bytes": 1095393
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260622-gti13-contact-sheet.jpg",
+  "visual_qa": "pending parent visual inspection before final report"
+}
