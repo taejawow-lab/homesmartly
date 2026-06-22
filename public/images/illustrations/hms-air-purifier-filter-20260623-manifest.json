@@ -1,0 +1,117 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-air-purifier-filter-reminder-wildfire-season-2026",
+  "date": "2026-06-23",
+  "assets": [
+    {
+      "filename": "public/images/illustrations/hms-air-purifier-filter-20260623-hero.png",
+      "url": "/images/illustrations/hms-air-purifier-filter-20260623-hero.png",
+      "prompt": "living room clean room setup with portable air purifier placed away from curtains and wall, blank device display, no text",
+      "seed": 62323000,
+      "prompt_id": "07a9944c-e5ee-4421-8a39-a135803c4fc7",
+      "source_meta": {
+        "filename": "batch_b_20260623_homesmartly_0_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "dimensions": [
+        1536,
+        864
+      ],
+      "endpoint_host": "gti13_direct_comfyui",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2
+    },
+    {
+      "filename": "public/images/illustrations/hms-air-purifier-filter-20260623-01.png",
+      "url": "/images/illustrations/hms-air-purifier-filter-20260623-01.png",
+      "prompt": "adult holding blank phone near portable air purifier and clean shelf, no readable screen, no logos",
+      "seed": 62323001,
+      "prompt_id": "219e4f0a-479e-4da9-aa11-5484bbc81c5f",
+      "source_meta": {
+        "filename": "batch_b_20260623_homesmartly_1_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "dimensions": [
+        1536,
+        864
+      ],
+      "endpoint_host": "gti13_direct_comfyui",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2
+    },
+    {
+      "filename": "public/images/illustrations/hms-air-purifier-filter-20260623-02.png",
+      "url": "/images/illustrations/hms-air-purifier-filter-20260623-02.png",
+      "prompt": "hands inspecting plain white air purifier filter beside sealed trash bag, no labels no printed text",
+      "seed": 62323002,
+      "prompt_id": "c8f061f8-4483-4aee-a8bd-903064f8d8ec",
+      "source_meta": {
+        "filename": "batch_b_20260623_homesmartly_2_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "dimensions": [
+        1536,
+        864
+      ],
+      "endpoint_host": "gti13_direct_comfyui",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2
+    },
+    {
+      "filename": "public/images/illustrations/hms-air-purifier-filter-20260623-03.png",
+      "url": "/images/illustrations/hms-air-purifier-filter-20260623-03.png",
+      "prompt": "closed windows and towel at door gap with air purifier running in calm room, no wildfire flames, no text",
+      "seed": 62323003,
+      "prompt_id": "407c4b5b-5b06-483a-aa19-2d8338ae5d6c",
+      "source_meta": {
+        "filename": "batch_b_20260623_homesmartly_3_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "dimensions": [
+        1536,
+        864
+      ],
+      "endpoint_host": "gti13_direct_comfyui",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2
+    },
+    {
+      "filename": "public/images/illustrations/hms-air-purifier-filter-20260623-04.png",
+      "url": "/images/illustrations/hms-air-purifier-filter-20260623-04.png",
+      "prompt": "kitchen table with blank checklist cards, keys, and clean air purifier manual with no visible writing",
+      "seed": 62323004,
+      "prompt_id": "86eb68f6-2a77-4669-bc82-ca8a91a9df78",
+      "source_meta": {
+        "filename": "batch_b_20260623_homesmartly_4_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "dimensions": [
+        1536,
+        864
+      ],
+      "endpoint_host": "gti13_direct_comfyui",
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 28,
+      "cfg": 5.2
+    }
+  ]
+}
