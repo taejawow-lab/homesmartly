@@ -1,0 +1,154 @@
+{
+  "date": "2026-06-25",
+  "site": "homesmartly",
+  "slug": "smart-garage-ventilation-sensor-heat-fume-routine-2026",
+  "endpoint": "redacted-direct-gti13",
+  "host": "gti13",
+  "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+  "dimensions": "1536x864",
+  "assets": [
+    {
+      "suffix": "hero",
+      "filename": "public/images/illustrations/hms-garage-ventilation-20260625-hero.png",
+      "bytes": 1376606,
+      "prompt": "clean residential garage with open door gap and wall sensor, no cars running, no text no logos",
+      "seed": 202606250000,
+      "prompt_id": "3f7e12f4-bd25-4d24-b6f0-f8eba56c951a",
+      "raw_output": {
+        "filename": "hermes_batchb_20260625_homesmartly_hero_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, currency, receipts, forms, readable documents"
+      }
+    },
+    {
+      "suffix": "01",
+      "filename": "public/images/illustrations/hms-garage-ventilation-20260625-01.png",
+      "bytes": 1442501,
+      "prompt": "plain garage wall with simple blank white sensor cover and ventilation grille, no display, no buttons, no text, safe clean residential garage",
+      "seed": 202606251097,
+      "prompt_id": "1c24cc7b-e144-46f2-851d-2b940bbfb656",
+      "raw_output": {
+        "filename": "hermes_batchb_20260625_final_homesmartly_01_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, license plate, keypad numbers, calculator, currency, receipts, forms, readable documents, notebook writing, calendar grid"
+      },
+      "regenerated_final_qa": true
+    },
+    {
+      "suffix": "02",
+      "filename": "public/images/illustrations/hms-garage-ventilation-20260625-02.png",
+      "bytes": 1770177,
+      "prompt": "garage ventilation routine with fan near open door and clear walkway, no labels",
+      "seed": 202606250002,
+      "prompt_id": "36040f8e-a7f8-4bfc-9d73-c0b501a6deea",
+      "raw_output": {
+        "filename": "hermes_batchb_20260625_homesmartly_02_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, currency, receipts, forms, readable documents"
+      }
+    },
+    {
+      "suffix": "03",
+      "filename": "public/images/illustrations/hms-garage-ventilation-20260625-03.png",
+      "bytes": 1691766,
+      "prompt": "closed parked car outside garage while household checks entry door sensor, no license plate",
+      "seed": 202606250003,
+      "prompt_id": "dbeee39f-92db-4b3a-a4ae-2774d0d5c486",
+      "raw_output": {
+        "filename": "hermes_batchb_20260625_homesmartly_03_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, currency, receipts, forms, readable documents"
+      }
+    },
+    {
+      "suffix": "04",
+      "filename": "public/images/illustrations/hms-garage-ventilation-20260625-04.png",
+      "bytes": 1742289,
+      "prompt": "summer garage storage with clear floor and safe airflow path, blank boxes no writing",
+      "seed": 202606250004,
+      "prompt_id": "25001150-7fe2-45c6-8961-a0424841299a",
+      "raw_output": {
+        "filename": "hermes_batchb_20260625_homesmartly_04_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 28,
+        "cfg": 5.2,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, medical device details, scannable pattern, child face closeup, currency, receipts, forms, readable documents"
+      }
+    },
+    {
+      "suffix": "05",
+      "filename": "public/images/illustrations/hms-garage-ventilation-20260625-05.png",
+      "bytes": 1353338,
+      "prompt": "garage entry safety still life with plain key hook and closed blank storage cabinet, no keypad, no remote, no paper, no text, no numbers",
+      "seed": 202606251101,
+      "prompt_id": "3e251226-2d1a-437b-84ca-b7c3e1f97f52",
+      "raw_output": {
+        "filename": "hermes_batchb_20260625_final_homesmartly_05_00001_.png",
+        "subfolder": "",
+        "type": "output"
+      },
+      "width": 1536,
+      "height": 864,
+      "workflow": {
+        "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+        "steps": 30,
+        "cfg": 5.0,
+        "sampler": "dpmpp_2m",
+        "scheduler": "karras",
+        "negative_prompt": "text, words, letters, numbers, watermark, logo, brand name, readable labels, screen text, fake user interface, QR code, barcode, distorted hands, deformed anatomy, unsafe scene, exposed wiring, damaged electrical cords, fake warning sign, blurry, low resolution, generic stock art, placeholder, cartoon, plastic skin, cluttered mess, license plate, keypad numbers, calculator, currency, receipts, forms, readable documents, notebook writing, calendar grid"
+      },
+      "regenerated_final_qa": true
+    }
+  ],
+  "contact_sheet": "/home/taekm33/blog-ops/16-sites/reports/batch-b-20260625-homesmartly-contact-sheet-final.jpg",
+  "visual_qa": "accepted after contact-sheet QA; rejected/regenerated text/UI/topic-mismatch assets before commit",
+  "adsense_readiness": "source-backed practical guide, 8 citations, internal links, FAQ/schema, no affiliate filler, GTI13 provenance committed"
+}
