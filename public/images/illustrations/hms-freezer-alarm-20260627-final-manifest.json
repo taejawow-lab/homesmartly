@@ -1,0 +1,88 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-freezer-door-alarm-power-outage-food-safety-routine-2026",
+  "endpoint": "GTI15 ComfyUI endpoint redacted in final report",
+  "generated_at": "2026-06-27",
+  "prompt_summary": "smart freezer door alarm and power-outage food safety routine; no text, numbers, logos, screens, people, hands, thermometers, or unsafe food scenes",
+  "assets": [
+    {
+      "file": "public/images/illustrations/hms-freezer-alarm-20260627-hero.png",
+      "url": "/images/illustrations/hms-freezer-alarm-20260627-hero.png",
+      "engine": "krea",
+      "seed": 2231811046,
+      "prompt_id": "3f396cd8-2625-4756-96ba-4a96d0472650",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "source": "GTI15 ComfyUI 192.168.50.31:8188",
+      "qa": "accepted after contact-sheet visual QA; rejected candidates excluded"
+    },
+    {
+      "file": "public/images/illustrations/hms-freezer-alarm-20260627-01.png",
+      "url": "/images/illustrations/hms-freezer-alarm-20260627-01.png",
+      "engine": "juggernaut",
+      "seed": 2231811048,
+      "prompt_id": "7f3dad6e-0a22-4825-b03b-88debf3b3bca",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "source": "GTI15 ComfyUI 192.168.50.31:8188",
+      "qa": "accepted after contact-sheet visual QA; rejected candidates excluded"
+    },
+    {
+      "file": "public/images/illustrations/hms-freezer-alarm-20260627-02.png",
+      "url": "/images/illustrations/hms-freezer-alarm-20260627-02.png",
+      "engine": "juggernaut",
+      "seed": 1940853434,
+      "prompt_id": "11aa8f08-edbd-45c7-ac25-739fa8b5b3b4",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "source": "GTI15 ComfyUI 192.168.50.31:8188",
+      "qa": "accepted after contact-sheet visual QA; rejected candidates excluded"
+    },
+    {
+      "file": "public/images/illustrations/hms-freezer-alarm-20260627-03.png",
+      "url": "/images/illustrations/hms-freezer-alarm-20260627-03.png",
+      "engine": "juggernaut",
+      "seed": 2272961892,
+      "prompt_id": "c3439b5e-5c9e-47f0-be11-3077c8218526",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "source": "GTI15 ComfyUI 192.168.50.31:8188",
+      "qa": "accepted after contact-sheet visual QA; rejected candidates excluded"
+    },
+    {
+      "file": "public/images/illustrations/hms-freezer-alarm-20260627-04.png",
+      "url": "/images/illustrations/hms-freezer-alarm-20260627-04.png",
+      "engine": "realvis",
+      "seed": 2391194770,
+      "prompt_id": "383d021c-59fa-469f-a3aa-0305bad09bfa",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "source": "GTI15 ComfyUI 192.168.50.31:8188",
+      "qa": "accepted after contact-sheet visual QA; rejected candidates excluded"
+    },
+    {
+      "file": "public/images/illustrations/hms-freezer-alarm-20260627-05.png",
+      "url": "/images/illustrations/hms-freezer-alarm-20260627-05.png",
+      "engine": "juggernaut",
+      "seed": 2391194771,
+      "prompt_id": "e8a0762a-ead2-432d-80c5-574f4f9b0f41",
+      "dimensions": [
+        1536,
+        864
+      ],
+      "source": "GTI15 ComfyUI 192.168.50.31:8188",
+      "qa": "accepted after contact-sheet visual QA; rejected candidates excluded"
+    }
+  ],
+  "rejected": "A/B/D/E/F candidates with visible dials, text-like markings, fake labels, documents, weak topic match, or unsafe/weird food scenes were excluded."
+}
