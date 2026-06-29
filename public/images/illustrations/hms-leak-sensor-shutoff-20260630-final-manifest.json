@@ -1,0 +1,59 @@
+{
+  "endpoint": "GTI15 ComfyUI endpoint redacted in report; source host gti15, generated 2026-06-30 via generate_natural_blog_candidates.py",
+  "dimensions": "1536x864",
+  "qa": "combined contact sheets visually inspected; rejected images excluded from MDX/manifests",
+  "site": "homesmartly",
+  "slug": "smart-leak-sensor-under-sink-battery-shutoff-drill-2026",
+  "accepted_count": 6,
+  "images": [
+    {
+      "published_file": "hms-leak-sensor-shutoff-20260630-01.png",
+      "source_candidate": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_20260630_gti15/homesmartly/prompt1/20260630_071223_krea_4050440488.png",
+      "engine": "krea",
+      "seed": "4050440488",
+      "dimensions": "1536x864",
+      "accepted": true
+    },
+    {
+      "published_file": "hms-leak-sensor-shutoff-20260630-02.png",
+      "source_candidate": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_20260630_gti15/homesmartly/prompt1/20260630_071259_realvis_4050440489.png",
+      "engine": "realvis",
+      "seed": "4050440489",
+      "dimensions": "1536x864",
+      "accepted": true
+    },
+    {
+      "published_file": "hms-leak-sensor-shutoff-20260630-03.png",
+      "source_candidate": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_20260630_gti15/homesmartly/prompt2/20260630_071411_realvis_737991416.png",
+      "engine": "realvis",
+      "seed": "737991416",
+      "dimensions": "1536x864",
+      "accepted": true
+    },
+    {
+      "published_file": "hms-leak-sensor-shutoff-20260630-04.png",
+      "source_candidate": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_20260630_gti15/homesmartly/prompt2/20260630_071427_juggernaut_737991417.png",
+      "engine": "juggernaut",
+      "seed": "737991417",
+      "dimensions": "1536x864",
+      "accepted": true
+    },
+    {
+      "published_file": "hms-leak-sensor-shutoff-20260630-05.png",
+      "source_candidate": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_20260630_gti15/homesmartly/regen1/20260630_072236_krea_3812892734.png",
+      "engine": "krea",
+      "seed": "3812892734",
+      "dimensions": "1536x864",
+      "accepted": true
+    },
+    {
+      "published_file": "hms-leak-sensor-shutoff-20260630-06.png",
+      "source_candidate": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_20260630_gti15/homesmartly/regen1/20260630_072313_realvis_3812892735.png",
+      "engine": "realvis",
+      "seed": "3812892735",
+      "dimensions": "1536x864",
+      "accepted": true
+    }
+  ],
+  "contact_sheet": "public/images/illustrations/hms-leak-sensor-shutoff-20260630-accepted-contact-sheet.jpg"
+}
