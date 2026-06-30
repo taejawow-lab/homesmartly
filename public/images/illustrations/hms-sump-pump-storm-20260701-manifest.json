@@ -1,0 +1,80 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-sump-pump-outlet-basement-storm-check-routine-2026",
+  "endpoint": "GTI15 ComfyUI http://192.168.50.31:8188",
+  "accepted": [
+    {
+      "slot": 1,
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_gti15_20260701/homesmartly/p1/20260701_071243_krea_1064377308.png",
+      "dest": "public/images/illustrations/hms-sump-pump-storm-20260701-01.png",
+      "selection": [
+        "homesmartly",
+        "p1",
+        1
+      ],
+      "dimensions": "1536x864",
+      "qa": "accepted visual QA"
+    },
+    {
+      "slot": 2,
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_gti15_20260701/homesmartly/p1/20260701_071320_realvis_1064377309.png",
+      "dest": "public/images/illustrations/hms-sump-pump-storm-20260701-02.png",
+      "selection": [
+        "homesmartly",
+        "p1",
+        2
+      ],
+      "dimensions": "1536x864",
+      "qa": "accepted visual QA"
+    },
+    {
+      "slot": 3,
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_gti15_20260701/homesmartly/p1/20260701_071337_juggernaut_1064377310.png",
+      "dest": "public/images/illustrations/hms-sump-pump-storm-20260701-03.png",
+      "selection": [
+        "homesmartly",
+        "p1",
+        3
+      ],
+      "dimensions": "1536x864",
+      "qa": "accepted visual QA"
+    },
+    {
+      "slot": 4,
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_gti15_20260701/homesmartly_repair2/x1/20260701_072900_krea_1531148354.png",
+      "dest": "public/images/illustrations/hms-sump-pump-storm-20260701-04.png",
+      "selection": [
+        "homesmartly_repair2",
+        "x1",
+        1
+      ],
+      "dimensions": "1536x864",
+      "qa": "accepted visual QA"
+    },
+    {
+      "slot": 5,
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_gti15_20260701/homesmartly_repair2/x1/20260701_072936_realvis_1531148355.png",
+      "dest": "public/images/illustrations/hms-sump-pump-storm-20260701-05.png",
+      "selection": [
+        "homesmartly_repair2",
+        "x1",
+        2
+      ],
+      "dimensions": "1536x864",
+      "qa": "accepted visual QA"
+    },
+    {
+      "slot": 6,
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/tmp/batch_b_gti15_20260701/homesmartly_repair2/x1/20260701_072954_juggernaut_1531148356.png",
+      "dest": "public/images/illustrations/hms-sump-pump-storm-20260701-06.png",
+      "selection": [
+        "homesmartly_repair2",
+        "x1",
+        3
+      ],
+      "dimensions": "1536x864",
+      "qa": "accepted visual QA"
+    }
+  ],
+  "rejected_policy": "excluded from MDX/staging"
+}
