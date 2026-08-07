@@ -1,0 +1,28 @@
+export const REVIEW_POSTS = [
+  "home-assistant-backup-plan-2026",
+  "home-energy-monitoring-load-shifting-2026",
+  "matter-smart-lock-setup-2026",
+  "robot-mops-irobot-braava-roborock-eufy",
+  "robot-vacuums-compared-data",
+  "security-cameras-wyze-ring-nest-data",
+  "smart-air-purifiers-hepa-cadr-aham",
+  "smart-doorbell-cameras-2026",
+  "smart-freezer-door-alarm-power-outage-food-safety-routine-2026",
+  "smart-garage-door-openers-data",
+  "smart-home-hubs-smartthings-hubitat-home-assistant",
+  "smart-humidifiers-levoit-dyson-govee",
+  "smart-irrigation-weather-controller-summer-water-plan-2026",
+  "smart-leak-sensor-under-sink-battery-shutoff-drill-2026",
+  "smart-locks-compared-data",
+  "smart-plugs-matter-energy-monitoring",
+  "smart-smoke-co-detectors-data",
+  "smart-speakers-echo-homepod-nest-audio",
+  "smart-sprinkler-rachio-rain-bird-orbit",
+  "smart-sump-pump-outlet-basement-storm-check-routine-2026",
+  "smart-switches-lutron-leviton-ge-cync",
+  "smart-thermostat-roi",
+  "smart-water-shutoff-valve-leak-plan-2026",
+  "thread-border-router-placement-matter-reliability-2026"
+];
+export const REVIEW_POST_SET = new Set(REVIEW_POSTS);
+export const REVIEW_MIN_EQUIVALENT_WORDS = 850;

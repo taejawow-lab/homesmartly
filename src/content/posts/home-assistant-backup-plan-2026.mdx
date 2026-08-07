@@ -67,7 +67,6 @@ faq:
     answer: "Restore a recent backup to a spare SD card, SSD, or test virtual machine, confirm the dashboard loads, then verify that critical automations and integrations appear before you need the backup in an outage."
 draft: false
 ---
-
 Smart homes fail in boring ways before they fail in dramatic ways. A router gets replaced and automations lose fixed IP addresses. A microSD card wears out. A Zigbee coordinator is moved to a different USB port. A firmware update breaks an integration the night before vacation. The devices are still on the wall, but the house no longer behaves like a system.
 
 A good Home Assistant backup plan is not just a file named backup. It is a recovery design for the whole stack: hub hardware, storage, network, radios, automations, credentials, and the handful of routines that actually matter when the internet is down. The goal is practical resilience. Lights should still turn on. Leak alerts should still trigger locally. Thermostat schedules should not disappear. You should be able to restore the home without rediscovering every lesson from the original build.
@@ -148,4 +147,4 @@ First, create a manual Home Assistant backup and download it to another device. 
 
 This is not as exciting as adding a new sensor, but it is the difference between a smart home and a pile of disconnected gadgets. A well-documented restore gives you confidence to update, migrate, and expand without betting the house on memory.
 
-For hub selection tradeoffs, compare the site's [SmartThings, Hubitat, and Home Assistant guide](/posts/smart-home-hubs-smartthings-hubitat-home-assistant). For protocol planning, pair this checklist with the [Matter protocol guide](/posts/matter-protocol-2026). If devices randomly drop offline, audit the network using the [mesh Wi-Fi comparison](/posts/mesh-wifi-eero-nest-orbi) before blaming automations.
+For hub selection tradeoffs, compare the site's [SmartThings, Hubitat, and Home Assistant guide](/posts/smart-home-hubs-smartthings-hubitat-home-assistant). For protocol planning, pair this checklist with the Matter protocol guide. If devices randomly drop offline, audit the network using the mesh Wi-Fi comparison before blaming automations.
