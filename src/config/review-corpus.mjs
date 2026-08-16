@@ -1,6 +1,7 @@
 export const REVIEW_POSTS = [
   "home-assistant-backup-plan-2026",
   "home-energy-monitoring-load-shifting-2026",
+  "home-ev-charging-level-1-vs-level-2-schedule-2026",
   "matter-smart-lock-setup-2026",
   "robot-mops-irobot-braava-roborock-eufy",
   "robot-vacuums-compared-data",

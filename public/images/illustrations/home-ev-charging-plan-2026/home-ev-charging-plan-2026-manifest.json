@@ -1,0 +1,102 @@
+{
+  "article_slug": "home-ev-charging-level-1-vs-level-2-schedule-2026",
+  "generated_at": "2026-08-17",
+  "generator": "GTI15 ComfyUI",
+  "workflow": "z_image_turbo_portrait",
+  "settings": {
+    "unet": "z_image_turbo_bf16.safetensors",
+    "steps": 8,
+    "cfg": 1.0,
+    "sampler": "res_multistep",
+    "scheduler": "simple",
+    "shift": 3.0
+  },
+  "prior_passes": [
+    "RealVisXL pass rejected: fake plates/logos/UI and malformed scenes",
+    "DreamShaperXL pass rejected: fake UI/text and relevance failures"
+  ],
+  "assets": [
+    {
+      "role": "hero",
+      "file": "public/images/illustrations/home-ev-charging-plan-2026/home-ev-charging-plan-2026-hero.png",
+      "source_file": "gti15_z_image_turbo_00009_.png",
+      "seed": 8172621,
+      "prompt_id": "9e92b449-bce3-4842-b843-0396e33198e1",
+      "asset_id": "d8f499f0-4f92-4916-ab70-1542c15a0605",
+      "model": "z_image_turbo_bf16.safetensors",
+      "width": 1216,
+      "height": 704,
+      "bytes": 320268,
+      "sha256": "16967b1f1bf46890dc7009682930b7fd72c522360f7054d98c174930ffd18ebc",
+      "accepted": true
+    },
+    {
+      "role": "level-comparison",
+      "file": "public/images/illustrations/home-ev-charging-plan-2026/home-ev-charging-plan-2026-level-comparison.png",
+      "source_file": "gti15_z_image_turbo_00010_.png",
+      "seed": 8172622,
+      "prompt_id": "83ecfe9a-1ce8-4bea-bd99-6d6bfcd3320f",
+      "asset_id": "36686b9f-b5e5-4e9e-839d-595d9e320890",
+      "model": "z_image_turbo_bf16.safetensors",
+      "width": 1216,
+      "height": 704,
+      "bytes": 475791,
+      "sha256": "7b5f16aef3533e43f022b8573b7a962f319b640fa9e8ba0afaea637a868cd57a",
+      "accepted": true
+    },
+    {
+      "role": "schedule-calculation",
+      "file": "public/images/illustrations/home-ev-charging-plan-2026/home-ev-charging-plan-2026-schedule-calculation.png",
+      "source_file": "gti15_z_image_turbo_00011_.png",
+      "seed": 8172623,
+      "prompt_id": "3b794a11-b4b8-4157-b220-fe390f340ab9",
+      "asset_id": "077041c0-b4d0-4d5a-bf89-1b848a50a379",
+      "model": "z_image_turbo_bf16.safetensors",
+      "width": 1216,
+      "height": 704,
+      "bytes": 443371,
+      "sha256": "67c7f82e0e4b218b4f879e5553ae73787c55d743980c19e1948ea82f3a5aa964",
+      "accepted": true
+    },
+    {
+      "role": "safety-inspection",
+      "file": "public/images/illustrations/home-ev-charging-plan-2026/home-ev-charging-plan-2026-safety-inspection.png",
+      "source_file": "gti15_z_image_turbo_00012_.png",
+      "seed": 8172624,
+      "prompt_id": "d8747e00-b9f5-499a-aa47-6760482a2508",
+      "asset_id": "8a12c309-ded1-4ded-8987-503290234e17",
+      "model": "z_image_turbo_bf16.safetensors",
+      "width": 1216,
+      "height": 704,
+      "bytes": 408797,
+      "sha256": "69a44cb330dfc638bb75847ef8e0d1b7e8d6551522280282b0dcdab45e01bf7c",
+      "accepted": true
+    },
+    {
+      "role": "weekly-review",
+      "file": "public/images/illustrations/home-ev-charging-plan-2026/home-ev-charging-plan-2026-weekly-review.png",
+      "source_file": "gti15_z_image_turbo_00014_.png",
+      "seed": 8172626,
+      "prompt_id": "ad268698-df47-4f25-afbe-ebc105bb13ad",
+      "asset_id": "51defae3-7c4c-402e-9440-a2189efc68ef",
+      "model": "z_image_turbo_bf16.safetensors",
+      "width": 1216,
+      "height": 704,
+      "bytes": 467528,
+      "sha256": "8f8e11e3544ac14e79409adcf31d3f26bf54e9b80bf1d4fde745992805ceab6e",
+      "accepted": true
+    }
+  ],
+  "qa_status": "PASS: 5 accepted after contact-sheet visual review; 1 excluded",
+  "contact_sheet": "public/images/illustrations/home-ev-charging-plan-2026/home-ev-charging-plan-2026-contact-sheet.jpg",
+  "rejected_generations": [
+    {
+      "role": "outage-resilience",
+      "source_file": "gti15_z_image_turbo_00013_.png",
+      "prompt_id": "47c6b9c5-2ca3-437d-a781-a5a638259155",
+      "asset_id": "de9fcf93-354b-4cd0-b280-e8e4076dc884",
+      "reason": "Rejected: offline-resilience cable did not plausibly connect to the vehicle; excluded from article."
+    }
+  ],
+  "contact_sheet_note": "Sheet shows five accepted images plus excluded outage-resilience candidate for documented QA."
+}
