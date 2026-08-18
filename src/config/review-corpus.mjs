@@ -23,7 +23,8 @@ export const REVIEW_POSTS = [
   "smart-switches-lutron-leviton-ge-cync",
   "smart-thermostat-roi",
   "smart-water-shutoff-valve-leak-plan-2026",
-  "thread-border-router-placement-matter-reliability-2026"
+  "thread-border-router-placement-matter-reliability-2026",
+  "smart-heat-pump-water-heater-schedule-2026"
 ];
 export const REVIEW_POST_SET = new Set(REVIEW_POSTS);
 export const REVIEW_MIN_EQUIVALENT_WORDS = 850;
