@@ -1,0 +1,160 @@
+---
+title: "Smart Home Surge Protector and UPS Inventory: Outage Recovery Without Unsafe Loads"
+description: "A room-by-room method to separate surge protection from battery backup, estimate runtime, avoid overloads, and restore smart-home devices safely after an outage."
+pubDate: 2026-08-21
+updatedDate: 2026-08-21
+category: "Smart Home"
+tags: ["power outage", "UPS", "surge protector", "smart home", "electrical safety"]
+heroImage: "/images/illustrations/hms-ups-surge-20260821-hero.png"
+schemaType: "HowTo"
+sources:
+  - title: "Power Outages"
+    url: "https://www.ready.gov/power-outages"
+    publication: "Ready.gov"
+    year: "2026"
+  - title: "Home Electrical Safety"
+    url: "https://www.esfi.org/home-electrical-safety/"
+    publication: "Electrical Safety Foundation International"
+    year: "2026"
+  - title: "Electrical Safety Center"
+    url: "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Electrical"
+    publication: "U.S. Consumer Product Safety Commission"
+    year: "2026"
+  - title: "Electrical Safety in the Home"
+    url: "https://www.nfpa.org/education-and-research/home-fire-safety/electrical-safety-in-the-home"
+    publication: "National Fire Protection Association"
+    year: "2026"
+  - title: "Flexible Cords"
+    url: "https://www.osha.gov/electrical/hazards/flexible-cords"
+    publication: "Occupational Safety and Health Administration"
+    year: "2026"
+  - title: "Residential Energy Consumption Survey"
+    url: "https://www.eia.gov/consumption/residential/"
+    publication: "U.S. Energy Information Administration"
+    year: "2026"
+  - title: "Secure Our World"
+    url: "https://www.cisa.gov/secure-our-world"
+    publication: "Cybersecurity and Infrastructure Security Agency"
+    year: "2026"
+  - title: "NIST Cybersecurity for IoT Program"
+    url: "https://www.nist.gov/itl/applied-cybersecurity/nist-cybersecurity-iot-program"
+    publication: "National Institute of Standards and Technology"
+    year: "2026"
+  - title: "Home Fires"
+    url: "https://www.usfa.fema.gov/prevention/home-fires/"
+    publication: "U.S. Fire Administration"
+    year: "2026"
+internalLinks:
+  - "/posts/home-assistant-backup-plan-2026/"
+  - "/posts/thread-border-router-placement-matter-reliability-2026/"
+  - "/posts/home-energy-monitoring-load-shifting-2026/"
+visualsCount: 5
+hasVideo: false
+wordCount: 1680
+affiliate: false
+aiDisclosed: true
+faq:
+  - question: "Is a UPS the same as a surge protector?"
+    answer: "No. A UPS may include surge suppression, but its defining job is short battery runtime. Read the exact equipment label and manual; do not assume every outlet on a unit is battery-backed."
+  - question: "Should a refrigerator or space heater go on a small computer UPS?"
+    answer: "No. Motor and heating loads can exceed a small UPS rating or create unsafe use. Follow the appliance and UPS manuals and consult a qualified electrician when the load is unclear."
+  - question: "What is the safest first step after power returns?"
+    answer: "Check for heat, odor, damaged cords, water, and tripped protection before reconnecting devices in a deliberate sequence. Stop if anything looks or smells abnormal."
+draft: false
+---
+
+A smart home often fails in an ordinary way: the utility blinks, the router reboots, a hub loses its clock, and several devices come back at once. Buying a larger battery is not automatically the answer. The useful work is deciding which devices need **surge protection only**, which deserve a few minutes of battery runtime, and which must stay off any small plug-in backup. This inventory uses current public safety guidance, equipment labels, and a measured load instead of marketing claims.
+
+![Outage load groups represented by unmarked planning blocks](/images/illustrations/hms-ups-surge-20260821-hero.png)
+
+## Start with three different jobs
+
+A surge protector, an uninterruptible power supply, and a whole-home surge protective device solve different problems. A listed plug-in protector is intended to limit some transient voltage reaching connected equipment. A UPS adds a battery and inverter so selected electronics can ride through a brief interruption or shut down cleanly. A service-panel device is installed by a qualified professional and protects at a different point in the electrical system. None of them makes damaged wiring, overloaded receptacles, water exposure, or unsafe appliances acceptable. The [CPSC electrical safety center](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Electrical) and [NFPA home electrical guidance](https://www.nfpa.org/education-and-research/home-fire-safety/electrical-safety-in-the-home) are good boundaries: heat, discoloration, buzzing, loose plugs, damaged insulation, or repeated breaker trips call for stop-work and qualified help.
+
+| Device or load | Usually needs battery? | Better default | Reason |
+|---|---:|---|---|
+| Modem, router, low-power hub | Often | UPS, if label ratings fit | Keeps local network and alerts available briefly |
+| Desktop computer or NAS | Sometimes | UPS with managed shutdown | Prevents abrupt shutdown; runtime is secondary |
+| TV, console, smart speaker | Rarely | Listed surge protection | Convenience does not justify battery capacity |
+| Refrigerator, freezer, pump | Not on a small IT UPS | Dedicated manufacturer-approved solution | Startup current and duty cycle differ from electronics |
+| Heater, kettle, toaster, iron | No | Direct wall receptacle as instructed | High heat load; never automate or back up casually |
+| Medical or life-safety equipment | Do not improvise | Manufacturer and care-plan guidance | Consumer UPS advice is not a medical continuity plan |
+
+## Build the inventory at the plug, not in the app
+
+Walk room by room and record the equipment name, input watts or volts and amps from its label, plug location, shutdown behavior, and whether losing it for an hour creates a safety issue or merely an inconvenience. Do not copy a device name from a home-automation dashboard and assume the physical plug is obvious. A hub may share a strip with a lamp, a speaker, and an unknown charger. Photographing labels for private reference is useful, but do not upload serial numbers, Wi-Fi credentials, QR codes, or account screens to a public inventory. The [NIST IoT program](https://www.nist.gov/itl/applied-cybersecurity/nist-cybersecurity-iot-program) and [CISA Secure Our World](https://www.cisa.gov/secure-our-world) support the broader habit of keeping device ownership, updates, and account protection visible.
+
+![Battery priority tiers represented by plain black blocks](/images/illustrations/hms-ups-surge-20260821-01.png)
+
+Use four columns that force decisions: **must remain available**, **needs graceful shutdown**, **can restart later**, and **must never be connected to this backup**. A router may belong in the first group only if the upstream internet service also remains available; otherwise the battery may preserve local automations but not internet access. A NAS belongs in the second group when it can receive a shutdown signal. Decorative devices usually belong in the third. Heating appliances, motor loads not explicitly supported by the UPS, and anything with damaged cords belong in the fourth.
+
+## Estimate load before estimating runtime
+
+The [U.S. Energy Information Administration residential energy data](https://www.eia.gov/consumption/residential/) provides household-use context; for this device inventory, start with the nameplate watts and intended runtime. For a UPS, add the continuous watts of every intended battery-backed device. If a label gives amps, a rough upper-bound input estimate is volts × amps, but real power, startup behavior, and power factor can make label math conservative or incomplete. Use the UPS manufacturer's own load calculator and manual for the final compatibility decision.
+
+Example: a modem rated 12 W, router at 18 W, hub at 5 W, and small network switch at 8 W total 43 W. A battery advertised as 300 watt-hours will not deliver 300/43 hours in real use; inverter losses, battery age, temperature, reserve cutoffs, and load shape reduce usable energy. Treat any simple watt-hour division as a planning estimate, then verify with a timed test while someone is present. Keep substantial headroom below both the watt and volt-amp ratings. If the UPS alarms, heats unusually, smells, or reports overload, stop the test.
+
+| Calculation | Example | What it does not prove |
+|---|---:|---|
+| Continuous load | 12 + 18 + 5 + 8 = 43 W | Startup peaks or compatibility |
+| Ideal runtime | battery Wh ÷ load W | Inverter loss, aging, temperature |
+| Tested runtime | observed minutes to chosen reserve | Future battery health |
+| Recovery order | modem → router → hub → clients | Upstream service availability |
+
+![Disconnected cords grouped for a plug inventory](/images/illustrations/hms-ups-surge-20260821-02.png)
+
+## Keep cords and ventilation boring
+
+A UPS is not furniture. Put it on a stable, dry, ventilated surface with the clearances required by its manual. Keep it away from sinks, condensate, direct sun, soft bedding, closed cabinets that trap heat, and paths where cords can be crushed. Never daisy-chain power strips or treat an extension cord as permanent wiring. [OSHA's flexible-cord guidance](https://www.osha.gov/electrical/hazards/flexible-cords) is written for workplaces, but the hazard logic is useful at home: cords are vulnerable to damage and are not a substitute for fixed wiring. [ESFI home electrical safety](https://www.esfi.org/home-electrical-safety/) also emphasizes correct use of outlets and extension devices.
+
+Check which UPS receptacles are battery-backed and which are surge-only; many units mix both. Use plain physical tags on the cords if needed, but keep them generic—“router” or “hub,” not account names or network passwords. Leave transformer blocks room to dissipate heat. If a plug will not seat firmly, the receptacle is loose, or the strip has scorch marks, retire it rather than building an automation around it.
+
+## Decide what happens during the outage
+
+Write a small policy before testing. For a brief flicker, the network may remain up. After five minutes, a NAS can begin graceful shutdown. At a selected battery reserve, optional hubs and switches can turn off. Do not let a home-automation rule repeatedly cycle equipment as voltage changes. The goal is one controlled transition, not maximum uptime.
+
+[Ready.gov's power-outage guidance](https://www.ready.gov/power-outages) reminds households to plan for communication, food safety, generators, and medical needs separately. A network UPS does not power the home. It also does not make a portable generator safe indoors; generators require their own carbon-monoxide and connection precautions. Keep flashlights available so you are not inspecting plugs by phone light while the floor is cluttered.
+
+![Outage kit categories represented by blank pouches and blocks](/images/illustrations/hms-ups-surge-20260821-03.png)
+
+## Test without creating a surprise
+
+Schedule a supervised test in daylight. Save work, notify household members, and confirm that no medical, security, or critical process depends on the circuit. Use the UPS self-test or manufacturer procedure rather than pulling arbitrary building plugs. Observe the connected load, alarm state, battery percentage, temperature, and whether devices remain stable. Then verify graceful shutdown behavior and reconnect normally.
+
+Do not test by opening an electrical panel, defeating a grounding pin, covering alarms, or creating repeated utility interruptions. If a hardwired surge protective device is being considered, use a qualified electrician. If a UPS battery is swollen, leaking, unusually hot, or beyond the replacement interval specified by the manufacturer, stop using it and follow local battery recycling rules.
+
+## Restore in a deliberate order
+
+When utility power returns, inspect first. Water near outlets, smoke, unusual odor, heat, arcing sounds, or repeated breaker trips are reasons not to reconnect. Otherwise bring the path back in stages: upstream modem or optical terminal, router, network switch, automation hub, then nonessential clients. Wait for each layer to become stable before adding the next. This makes a failed power supply or boot loop visible instead of hiding it in a simultaneous restart.
+
+![Recovery order represented by wooden blocks under a task light](/images/illustrations/hms-ups-surge-20260821-04.png)
+
+After recovery, check device time, firmware status, local-only automations, leak/smoke alert connectivity, and whether cameras or locks retained their intended privacy settings. Do not assume a green app tile proves the physical device is healthy. Run a real but nonhazardous function check. For a broader continuity sequence, use the existing [Home Assistant backup plan](/posts/home-assistant-backup-plan-2026/); for network-device placement and recovery boundaries, revisit the [Thread border-router reliability guide](/posts/thread-border-router-placement-matter-reliability-2026/).
+
+## Replacement and maintenance decisions
+
+Record purchase date, battery replacement date, last self-test, observed runtime at a known load, and the manual's replacement criteria. Runtime declining from 40 to 18 minutes at the same measured load is more useful than an app saying “healthy.” Do not buy a larger unit before removing optional loads and confirming the existing battery condition. A whole-home surge device may be a separate conversation with an electrician, especially where local code, service equipment, grounding, or lightning exposure matters.
+
+Use this decision rule:
+
+1. **No heat, damage, water, or loose connection?** If no, stop and repair the electrical problem.
+2. **Is the load compatible according to both labels and manuals?** If no or unknown, keep it off the UPS.
+3. **Does the device need continuity or only surge protection?** Battery capacity is reserved for continuity and shutdown.
+4. **Can the household test the recovery sequence?** An untested backup is a hypothesis.
+5. **Is the battery maintained and recyclable locally?** Include end-of-life handling in the purchase decision.
+
+
+## The one-page household checklist
+
+- Map every plug before moving it.
+- Separate battery-backed, surge-only, direct-wall, and prohibited loads.
+- Add continuous watts and keep manual-required headroom.
+- Place the UPS on a dry, hard, ventilated surface.
+- Avoid daisy chains, permanent extension-cord use, and crushed cables.
+- Define a shutdown threshold and a restart order.
+- Test while supervised; record actual runtime at the actual load.
+- Recheck after storms, battery replacement, device additions, or repeated alarms.
+- Keep account, network, serial, and QR information out of shared notes.
+- Stop for heat, smell, damage, water, overload, or repeated tripping.
+
+The value of the inventory is not the spreadsheet. It is the ability to say why each device is connected, what happens when power fails, and when the household stops troubleshooting. That is safer and more reliable than buying battery capacity first and discovering the load plan during the next outage.

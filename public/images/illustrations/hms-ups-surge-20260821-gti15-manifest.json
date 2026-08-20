@@ -1,0 +1,66 @@
+{
+  "date": "2026-08-21",
+  "site": "homesmartly",
+  "host": "GTI15",
+  "visual_qa": "PASS after iterative Krea/RealVisXL contact-sheet review; only selected assets retained",
+  "accepted_count": 5,
+  "rejected_candidates_not_published": true,
+  "contact_sheet": "C:\\Users\\k8plus\\AppData\\Local\\hermes\\tmp\\batchb-20260821-final-selected\\homesmartly\\hms-ups-surge-20260821-contact-sheet-final.jpg",
+  "assets": [
+    {
+      "filename": "hms-ups-surge-20260821-hero.png",
+      "bytes": 1273960,
+      "engine": null,
+      "model": null,
+      "seed": null,
+      "prompt_id": null,
+      "prompt": "abstract battery runtime planning scene with six plain wooden discs moving between three empty solid-color trays, black flashlight nearby, no paper, photorealistic editorial stock photo, realistic simple household still life, natural soft daylight, physically plausible geometry, no people, no hands, no faces, no readable text, no letters, no numbers, no symbols, no logos, no brand marks, no watermark, no labels, no paper, no forms, no receipts, no currency, no batteries, no screens, no user interface, no wall outlets, no exposed wiring, no surreal objects, 1536 by 864 landscape",
+      "source_manifest": "C:\\Users\\k8plus\\AppData\\Local\\hermes\\tmp\\batchb-20260821-gti15-home-final\\01\\manifest.json",
+      "qa": "PASS"
+    },
+    {
+      "filename": "hms-ups-surge-20260821-01.png",
+      "bytes": 1275914,
+      "engine": null,
+      "model": null,
+      "seed": null,
+      "prompt_id": null,
+      "prompt": "home recovery sequence represented by three plain unmarked black boxes arranged left to right with wide spacing on a ventilated open shelf, no cables, photorealistic editorial stock photo, realistic simple household still life, natural soft daylight, physically plausible geometry, no people, no hands, no faces, no readable text, no letters, no numbers, no symbols, no logos, no brand marks, no watermark, no labels, no paper, no forms, no receipts, no currency, no batteries, no screens, no user interface, no wall outlets, no exposed wiring, no surreal objects, 1536 by 864 landscape",
+      "source_manifest": "C:\\Users\\k8plus\\AppData\\Local\\hermes\\tmp\\batchb-20260821-gti15-home-final\\02\\manifest.json",
+      "qa": "PASS"
+    },
+    {
+      "filename": "hms-ups-surge-20260821-02.png",
+      "bytes": 1265942,
+      "engine": null,
+      "model": null,
+      "seed": null,
+      "prompt_id": null,
+      "prompt": "safe cord inventory still life with four short disconnected plain black low-voltage cables coiled separately using solid-color reusable loops, no plugs visible, photorealistic editorial stock photo, realistic simple household still life, natural soft daylight, physically plausible geometry, no people, no hands, no faces, no readable text, no letters, no numbers, no symbols, no logos, no brand marks, no watermark, no labels, no paper, no forms, no receipts, no currency, no batteries, no screens, no user interface, no wall outlets, no exposed wiring, no surreal objects, 1536 by 864 landscape",
+      "source_manifest": "C:\\Users\\k8plus\\AppData\\Local\\hermes\\tmp\\batchb-20260821-gti15-home-final\\03\\manifest.json",
+      "qa": "PASS"
+    },
+    {
+      "filename": "hms-ups-surge-20260821-03.png",
+      "bytes": 1409740,
+      "engine": null,
+      "model": null,
+      "seed": null,
+      "prompt_id": null,
+      "prompt": "emergency home network kit represented by plain black pouch, flashlight and three unmarked wooden blocks on a dry hard shelf, no batteries, photorealistic editorial stock photo, realistic simple household still life, natural soft daylight, physically plausible geometry, no people, no hands, no faces, no readable text, no letters, no numbers, no symbols, no logos, no brand marks, no watermark, no labels, no paper, no forms, no receipts, no currency, no batteries, no screens, no user interface, no wall outlets, no exposed wiring, no surreal objects, 1536 by 864 landscape",
+      "source_manifest": "C:\\Users\\k8plus\\AppData\\Local\\hermes\\tmp\\batchb-20260821-gti15-home-final\\04\\manifest.json",
+      "qa": "PASS"
+    },
+    {
+      "filename": "hms-ups-surge-20260821-04.png",
+      "bytes": 1231880,
+      "engine": null,
+      "model": null,
+      "seed": null,
+      "prompt_id": null,
+      "prompt": "power restoration decision support scene with four plain wooden blocks on separate small trays progressing from dark to light natural illumination, no devices, photorealistic editorial stock photo, realistic simple household still life, natural soft daylight, physically plausible geometry, no people, no hands, no faces, no readable text, no letters, no numbers, no symbols, no logos, no brand marks, no watermark, no labels, no paper, no forms, no receipts, no currency, no batteries, no screens, no user interface, no wall outlets, no exposed wiring, no surreal objects, 1536 by 864 landscape",
+      "source_manifest": "C:\\Users\\k8plus\\AppData\\Local\\hermes\\tmp\\batchb-20260821-gti15-home-final\\05\\manifest.json",
+      "qa": "PASS"
+    }
+  ]
+}
