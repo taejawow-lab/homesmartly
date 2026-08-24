@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-08-25",
+  "backend": "GTI15 ComfyUI",
+  "endpoint": "http://192.168.50.31:8188",
+  "article_prefix": "hms-radon-monitor-20260825",
+  "accepted_count": 6,
+  "rejected_candidates_excluded": true,
+  "contact_sheet_qa": "PASS; final selected set reassembled and visually inspected before staging",
+  "assets": [
+    {
+      "final_filename": "hms-radon-monitor-20260825-hero.png",
+      "engine": "realvis",
+      "model": "RealVisXL_V5.0_fp16.safetensors",
+      "prompt_id": "b33d8b00-7a91-431c-b041-511282cd205c",
+      "seed": 1675818726,
+      "dimensions": "1536x864",
+      "bytes": 1340804,
+      "sha256": "b86f667fda3087e8437a0a53cee764c1a504f9cdee9a92570e8c196d60bb9d8e",
+      "prompt": "empty clean basement corner sealed floor no text no people editorial photo",
+      "negative_prompt": "people, person, face, hands, fingers, body, readable text, letters, numbers, logo, watermark, signature, fake user interface, app dock, icons, browser window, code screen, open laptop screen, monitor screen, document, forms, receipts, certificates, currency, medicine labels, policy paper, passport, distorted objects, warped laptop, impossible geometry, extra objects, clutter, blurry, low resolution, oversaturated, cartoon, anime, 3d render, illustration artifacts",
+      "qa_status": "ACCEPTED_AFTER_CONTACT_SHEET_VISUAL_QA"
+    },
+    {
+      "final_filename": "hms-radon-monitor-20260825-01.png",
+      "engine": "juggernaut",
+      "model": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prompt_id": "30fb63eb-5235-4d90-b6fc-407a59609703",
+      "seed": 1675818727,
+      "dimensions": "1536x864",
+      "bytes": 1194901,
+      "sha256": "9250208fa081c0110c4e0c9e2abf324f200f11568dbd7d5e042e1f7e6fc35969",
+      "prompt": "empty clean basement corner sealed floor no text no people editorial photo",
+      "negative_prompt": "people, person, face, hands, fingers, body, readable text, letters, numbers, logo, watermark, signature, fake user interface, app dock, icons, browser window, code screen, open laptop screen, monitor screen, document, forms, receipts, certificates, currency, medicine labels, policy paper, passport, distorted objects, warped laptop, impossible geometry, extra objects, clutter, blurry, low resolution, oversaturated, cartoon, anime, 3d render, illustration artifacts",
+      "qa_status": "ACCEPTED_AFTER_CONTACT_SHEET_VISUAL_QA"
+    },
+    {
+      "final_filename": "hms-radon-monitor-20260825-02.png",
+      "engine": "realvis",
+      "model": "RealVisXL_V5.0_fp16.safetensors",
+      "prompt_id": "c9176af8-9b4a-4f7b-bb93-e67c68414da0",
+      "seed": 1114861803,
+      "dimensions": "1536x864",
+      "bytes": 1458149,
+      "sha256": "ad74a88c5c9246950d61b498f83f46dca501f1e07da2566cd5d36910f79491a6",
+      "prompt": "Professional editorial photograph of an empty finished basement ready for radon testing, small plain compact sensor with no display and no labels on a simple shelf, sealed concrete floor, window closed, no tripod, no screens, no gauges, no pipes, no text",
+      "negative_prompt": "people, person, face, hands, fingers, body, readable text, letters, numbers, logo, watermark, signature, fake user interface, app dock, icons, browser window, code screen, open laptop screen, monitor screen, document, forms, receipts, certificates, currency, medicine labels, policy paper, passport, distorted objects, warped laptop, impossible geometry, extra objects, clutter, blurry, low resolution, oversaturated, cartoon, anime, 3d render, illustration artifacts",
+      "qa_status": "ACCEPTED_AFTER_CONTACT_SHEET_VISUAL_QA"
+    },
+    {
+      "final_filename": "hms-radon-monitor-20260825-03.png",
+      "engine": "juggernaut",
+      "model": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prompt_id": "f32f4d07-de9b-4d10-9c54-4e897e48e116",
+      "seed": 1114861804,
+      "dimensions": "1536x864",
+      "bytes": 1556784,
+      "sha256": "86a7e8c63f042c2473fe236e4e24fe644b6aef24864d8da94b77f9be6fcf9d71",
+      "prompt": "Professional editorial photograph of an empty finished basement ready for radon testing, small plain compact sensor with no display and no labels on a simple shelf, sealed concrete floor, window closed, no tripod, no screens, no gauges, no pipes, no text",
+      "negative_prompt": "people, person, face, hands, fingers, body, readable text, letters, numbers, logo, watermark, signature, fake user interface, app dock, icons, browser window, code screen, open laptop screen, monitor screen, document, forms, receipts, certificates, currency, medicine labels, policy paper, passport, distorted objects, warped laptop, impossible geometry, extra objects, clutter, blurry, low resolution, oversaturated, cartoon, anime, 3d render, illustration artifacts",
+      "qa_status": "ACCEPTED_AFTER_CONTACT_SHEET_VISUAL_QA"
+    },
+    {
+      "final_filename": "hms-radon-monitor-20260825-04.png",
+      "engine": "krea",
+      "model": "flux1-krea-dev_fp8_scaled.safetensors",
+      "prompt_id": "3073e8f1-f687-4d56-9bd4-1636949ab095",
+      "seed": 2097995407,
+      "dimensions": "1536x864",
+      "bytes": 1783133,
+      "sha256": "330fe1dac2c65c43c48b9b6cecc32e95bd95962ba6df7e557e197058f81b2bca",
+      "prompt": "Professional editorial photograph of a clean basement inspection scene for radon planning, sealed sump cover, plain closed tool case, simple vent pipe disappearing safely through ceiling, no devices, no gauges, no water heaters, no labels, no text, no people",
+      "negative_prompt": "people, person, face, hands, fingers, body, readable text, letters, numbers, logo, watermark, signature, fake user interface, app dock, icons, browser window, code screen, open laptop screen, monitor screen, document, forms, receipts, certificates, currency, medicine labels, policy paper, passport, distorted objects, warped laptop, impossible geometry, extra objects, clutter, blurry, low resolution, oversaturated, cartoon, anime, 3d render, illustration artifacts",
+      "qa_status": "ACCEPTED_AFTER_CONTACT_SHEET_VISUAL_QA"
+    },
+    {
+      "final_filename": "hms-radon-monitor-20260825-05.png",
+      "engine": "krea",
+      "model": "flux1-krea-dev_fp8_scaled.safetensors",
+      "prompt_id": "3c603d31-4643-471b-9d43-ce06843d5617",
+      "seed": 1675818725,
+      "dimensions": "1536x864",
+      "bytes": 1795414,
+      "sha256": "ea63bbe6fc0deb046452afd647ce259739bda0a2a6627ad3b5c8de0a311f9669",
+      "prompt": "empty clean basement corner sealed floor no text no people editorial photo",
+      "negative_prompt": "people, person, face, hands, fingers, body, readable text, letters, numbers, logo, watermark, signature, fake user interface, app dock, icons, browser window, code screen, open laptop screen, monitor screen, document, forms, receipts, certificates, currency, medicine labels, policy paper, passport, distorted objects, warped laptop, impossible geometry, extra objects, clutter, blurry, low resolution, oversaturated, cartoon, anime, 3d render, illustration artifacts",
+      "qa_status": "ACCEPTED_AFTER_CONTACT_SHEET_VISUAL_QA"
+    }
+  ]
+}

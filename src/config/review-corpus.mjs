@@ -26,6 +26,7 @@ export const REVIEW_POSTS = [
   "thread-border-router-placement-matter-reliability-2026",
   "smart-heat-pump-water-heater-schedule-2026",
   "smart-home-surge-protector-ups-outage-recovery-inventory-2026"
+  ,"smart-radon-monitor-continuous-readings-confirmation-mitigation-2026"
 ];
 export const REVIEW_POST_SET = new Set(REVIEW_POSTS);
 export const REVIEW_MIN_EQUIVALENT_WORDS = 850;
