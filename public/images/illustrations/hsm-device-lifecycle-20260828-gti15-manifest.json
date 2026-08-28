@@ -1,0 +1,62 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-home-device-lifecycle-security-inventory-2026",
+  "generated_at": "2026-08-28",
+  "backend": "GTI15 ComfyUI",
+  "endpoint": "http://192.168.50.31:8188",
+  "model": "flux1-krea-dev_fp8_scaled.safetensors / RealVisXL V5 fallback",
+  "assets": [
+    {
+      "filename": "hsm-device-lifecycle-20260828-hero.png",
+      "engine": "krea",
+      "seed": 2026082861,
+      "prompt_id": "f388e3ff-8301-4983-a2fb-64d716a92aeb",
+      "prompt": "daylight macro editorial photo of three plain white rectangular door sensor blocks on an empty light wood table, no other objects, no screen no cable no paper no people no text no logo",
+      "dimensions": "1536x864",
+      "accepted": true,
+      "qa": "visual-pass-2026-08-28"
+    },
+    {
+      "filename": "hsm-device-lifecycle-20260828-01.png",
+      "engine": "realvis",
+      "seed": 2026082872,
+      "prompt_id": "7a145d29-6947-41d8-a96a-409eef704d83",
+      "prompt": "daylight macro editorial photo of five plain smooth white rectangular sensor blocks arranged in one row on an empty light wood table, nothing else, blank surfaces, no cable no ports no paper no people no text no logo",
+      "dimensions": "1536x864",
+      "accepted": true,
+      "qa": "visual-pass-2026-08-28"
+    },
+    {
+      "filename": "hsm-device-lifecycle-20260828-02.png",
+      "engine": "krea",
+      "seed": 2026082873,
+      "prompt_id": "cf55f143-fd02-4702-933e-47ac24505e9f",
+      "prompt": "daylight macro editorial photo of five plain smooth matte black circular sensor pucks arranged in one row on an empty light wood table, nothing else, blank surfaces, no cable no ports no paper no people no text no logo",
+      "dimensions": "1536x864",
+      "accepted": true,
+      "qa": "visual-pass-2026-08-28"
+    },
+    {
+      "filename": "hsm-device-lifecycle-20260828-03.png",
+      "engine": "realvis",
+      "seed": 2026082874,
+      "prompt_id": "5069d6e2-b3c6-4e70-b37d-b6fc1e6cb6c0",
+      "prompt": "daylight macro editorial photo of five plain smooth matte black circular sensor pucks arranged in one row on an empty light wood table, nothing else, blank surfaces, no cable no ports no paper no people no text no logo",
+      "dimensions": "1536x864",
+      "accepted": true,
+      "qa": "visual-pass-2026-08-28"
+    },
+    {
+      "filename": "hsm-device-lifecycle-20260828-04.png",
+      "engine": "realvis",
+      "seed": 2026082876,
+      "prompt_id": "03e8d605-fe48-42cf-8bdb-cc544b23dd67",
+      "prompt": "daylight macro editorial photo of two plain smooth white rectangular sensor blocks beside three plain smooth white circular sensor pucks on an empty light wood table, nothing else, blank surfaces, no cable no ports no paper no people no text no logo",
+      "dimensions": "1536x864",
+      "accepted": true,
+      "qa": "visual-pass-2026-08-28"
+    }
+  ],
+  "visual_qa": "PASS",
+  "rejected_candidates_excluded": true
+}
