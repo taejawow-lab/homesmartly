@@ -1,0 +1,39 @@
+{
+  "site": "homesmartly",
+  "slug": "smart-natural-gas-alarm-placement-response-guide-2026",
+  "generated_at": "2026-08-31",
+  "backend": "GTI15 ComfyUI",
+  "visual_qa": "PASS",
+  "assets": [
+    {
+      "filename": "smart-natural-gas-alarm-placement-response-guide-2026-1.png",
+      "source": "homesmartly/final1/20260831_100205_krea_1208973304.png",
+      "accepted": true
+    },
+    {
+      "filename": "smart-natural-gas-alarm-placement-response-guide-2026-2.png",
+      "source": "homesmartly/final1/20260831_100239_realvis_1208973305.png",
+      "accepted": true
+    },
+    {
+      "filename": "smart-natural-gas-alarm-placement-response-guide-2026-3.png",
+      "source": "homesmartly/final1/20260831_100256_juggernaut_1208973306.png",
+      "accepted": true
+    },
+    {
+      "filename": "smart-natural-gas-alarm-placement-response-guide-2026-4.png",
+      "source": "homesmartly/final2/20260831_100314_krea_3258869465.png",
+      "accepted": true
+    },
+    {
+      "filename": "smart-natural-gas-alarm-placement-response-guide-2026-5.png",
+      "source": "homesmartly/final2/20260831_100348_realvis_3258869466.png",
+      "accepted": true
+    },
+    {
+      "filename": "smart-natural-gas-alarm-placement-response-guide-2026-6.png",
+      "source": "homesmartly/final2/20260831_100406_juggernaut_3258869467.png",
+      "accepted": true
+    }
+  ]
+}
