@@ -1,0 +1,95 @@
+{
+  "site": "homesmartly",
+  "date": "2026-09-30",
+  "purpose": "existing-public-content visualsCount repair",
+  "assets": [
+    {
+      "filename": "post2-battery.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/homesmartly/post2-battery/20260930_124339_krea_930007.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "GTI15 Krea visual-QA pass"
+    },
+    {
+      "filename": "post2-installation.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/homesmartly/post2-installation/20260930_124356_krea_930008.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "GTI15 Krea visual-QA pass"
+    },
+    {
+      "filename": "post2-protocols.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/diagrams/post2-protocols.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "deterministic editorial diagram"
+    },
+    {
+      "filename": "post4-decision.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/homesmartly/post4-decision/20260930_124306_krea_930005.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "GTI15 Krea visual-QA pass"
+    },
+    {
+      "filename": "post4-ecosystem.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/homesmartly/post4-ecosystem/20260930_124232_krea_930003.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "GTI15 Krea visual-QA pass"
+    },
+    {
+      "filename": "post4-privacy.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/homesmartly/post4-privacy/20260930_124249_krea_930004.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "GTI15 Krea visual-QA pass"
+    },
+    {
+      "filename": "post5-cost.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/diagrams/post5-cost.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "deterministic editorial diagram"
+    },
+    {
+      "filename": "post5-pets.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/diagrams/post5-pets.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "deterministic editorial diagram"
+    },
+    {
+      "filename": "post5-suction.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/homesmartly/post5-suction/20260930_124120_krea_930000.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "GTI15 Krea visual-QA pass"
+    },
+    {
+      "filename": "thermostat-payback.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/diagrams/thermostat-payback.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "deterministic editorial diagram"
+    },
+    {
+      "filename": "thermostat-zoning.png",
+      "source": "/mnt/c/Users/k8plus/AppData/Local/hermes/cache/scratch/batch-b-repair-images/diagrams/thermostat-zoning.png",
+      "width": 1536,
+      "height": 864,
+      "qa": "PASS",
+      "provenance": "deterministic editorial diagram"
+    }
+  ]
+}
