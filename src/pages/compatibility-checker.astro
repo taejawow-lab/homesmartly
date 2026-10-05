@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Compatibility Checker" description="Measured smart-home compatibility checker for homesmartly readers." active="tools">
+<BaseLayout title="Compatibility Checker" description="A planning checklist for verifying smart-home connections; not a measured compatibility database." active="tools">
 
   <section class="tool-hero wrap" data-screen-label="Checker / Hero">
     <span class="eyebrow">Interactive Tool · 01</span>
     <h1 class="serif">Will it work with your setup?</h1>
-    <p class="lede">Pick your hub and the device you're eyeing. We'll tell you if it pairs natively, whether you need a Thread border router, and what to verify on the box before you buy.</p>
+    <p class="lede">Pick your ecosystem and a connection scenario. This checklist shows what to verify in the exact device and controller manuals; it does not certify a product or prove that it will pair.</p>
   </section>
 
   <section class="wrap" style="padding-bottom:80px" data-screen-label="Checker / Tool">
@@ -28,10 +28,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="divider-step"></div>
 
           <span class="step">Step 02</span>
-          <h2 class="serif">What device?</h2>
+          <h2 class="serif">What connection scenario?</h2>
           <div class="dev-search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
-            <input id="devq" type="text" placeholder="Search devices…" autocomplete="off">
+            <input id="devq" type="text" placeholder="Search connection scenarios…" autocomplete="off">
           </div>
           <div class="dev-list" id="devlist"></div>
         </div>
@@ -43,7 +43,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="ve"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 11l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
           <p>Pick a hub and a device to see the verdict.</p>
         </div>
-        <p class="fineprint" style="margin-top:18px">Compatibility reflects current Matter 1.5 support. Always verify the Matter logo on the retail box — a Thread logo alone does not guarantee Matter. <a href="/posts/smart-thermostat-vacation-mode-summer-travel-checklist-2026/" style="text-decoration:underline">Why this matters →</a></p>
+        <p class="fineprint" style="margin-top:18px">Planning guidance checked against official documentation on 6 October 2026, not firsthand pairing tests. A protocol or ecosystem name is not model-level compatibility evidence. <a href="/posts/smart-home-hubs-smartthings-hubitat-home-assistant/" style="text-decoration:underline">Read the hub comparison →</a></p>
+        <ul class="fineprint">
+          <li><a href="https://csa-iot.org/all-solutions/matter/">Connectivity Standards Alliance: Matter overview</a> — standard scope, not a guarantee for every product or firmware.</li>
+          <li><a href="https://support.apple.com/en-us/102078">Apple: Thread border router requirements</a> — check the listed hardware generation and software requirements.</li>
+          <li><a href="https://www.threadgroup.org/What-is-Thread/Thread-Benefits">Thread Group: Thread networking</a> — networking is distinct from the application protocol.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -61,26 +66,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     alarm:'<circle cx="12" cy="12" r="8"/><path d="M12 9v3M12 15h.01"/>'
   };
   var DEVICES=[
-    {id:'eve-door',name:'Eve Door & Window',type:'Contact sensor',ic:IC.sensor,conn:'thread'},
-    {id:'nanoleaf',name:'Nanoleaf Essentials Bulb',type:'Light',ic:IC.bulb,conn:'thread'},
-    {id:'yale-lock',name:'Yale Smart Lock with Matter',type:'Door lock',ic:IC.lock,conn:'thread'},
-    {id:'eve-energy',name:'Eve Energy Smart Plug',type:'Plug / energy',ic:IC.plug,conn:'thread'},
-    {id:'aqara-p2',name:'Aqara Door Sensor P2',type:'Contact sensor',ic:IC.sensor,conn:'thread'},
-    {id:'tp-plug',name:'TP-Link Tapo Matter Plug',type:'Plug',ic:IC.plug,conn:'wifi'},
-    {id:'ecobee',name:'Ecobee Smart Thermostat Premium',type:'Thermostat',ic:IC.therm,conn:'thread'},
-    {id:'wiz',name:'WiZ Wi-Fi Bulb (Matter)',type:'Light',ic:IC.bulb,conn:'wifi'},
-    {id:'smoke',name:'X-Sense Smart Smoke + CO Alarm',type:'Alarm',ic:IC.alarm,conn:'wifi'},
-    {id:'leak',name:'Aqara Water Leak Sensor',type:'Leak sensor',ic:IC.sensor,conn:'zigbee'}
+    {id:'matter-thread',name:'Matter over Thread (verified on exact device)',type:'Connection scenario',ic:IC.sensor,conn:'thread'},
+    {id:'matter-wifi',name:'Matter over Wi-Fi (verified on exact device)',type:'Connection scenario',ic:IC.plug,conn:'wifi'},
+    {id:'zigbee',name:'Zigbee device',type:'Connection scenario',ic:IC.sensor,conn:'zigbee'},
+    {id:'unknown',name:'Unknown protocol or legacy model',type:'Connection scenario',ic:IC.therm,conn:'unknown'}
   ];
-
-  // hub capabilities
   var HUBS={
-    apple:{name:'Apple Home',tbr:true,matter:'full'},
-    google:{name:'Google Home',tbr:true,matter:'partial'},
-    alexa:{name:'Amazon Alexa',tbr:true,matter:'subset'},
-    smartthings:{name:'SmartThings',tbr:true,matter:'full'},
-    hass:{name:'Home Assistant',tbr:true,matter:'full'},
-    none:{name:'no hub',tbr:false,matter:'none'}
+    apple:{name:'Apple Home'}, google:{name:'Google Home'}, alexa:{name:'Amazon Alexa'},
+    smartthings:{name:'SmartThings'}, hass:{name:'Home Assistant'}, none:{name:'phone-only setup'}
   };
 
   var state={hub:null,dev:null,q:''};
@@ -89,7 +82,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   function renderDevs(){
     var list=DEVICES.filter(function(d){return !state.q || (d.name+' '+d.type).toLowerCase().indexOf(state.q.toLowerCase())>=0;});
     devlist.innerHTML=list.map(function(d){
-      var conn=d.conn==='thread'?'Thread':d.conn==='wifi'?'Wi-Fi':'Zigbee';
+      var conn=d.conn==='thread'?'Matter / Thread':d.conn==='wifi'?'Matter / Wi-Fi':d.conn==='zigbee'?'Zigbee':'Needs verification';
       var pressed=state.dev===d.id?'true':'false';
       return '<button class="dev" data-dev="'+d.id+'" aria-pressed="'+pressed+'">'+dic(d.ic)
         +'<div><div class="dn">'+d.name+'</div><div class="dm"><span>'+d.type+'</span><span>·</span><span>'+conn+'</span></div></div></button>';
@@ -106,51 +99,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       return;
     }
     var hub=HUBS[state.hub], dev=DEVICES.filter(function(d){return d.id===state.dev;})[0];
-    var level='ok',head='',sub='',steps=[],cls;
-
-    if(dev.conn==='zigbee'){
-      level='no';
-      head='Not directly compatible';
-      sub='<b>'+dev.name+'</b> uses Zigbee, which Matter does not transport. You\u2019d need a Zigbee bridge that exposes it to '+hub.name+' as a Matter bridge.';
-      steps=[['warn','Add a Zigbee hub (e.g. SmartThings or a HA Zigbee radio)'],['warn','Expose devices to '+hub.name+' via a Matter bridge'],['ok','Then control normally from your hub']];
-    } else if(state.hub==='none'){
-      level='warn';
-      head='Works \u2014 but you\u2019ll want a hub';
-      sub='<b>'+dev.name+'</b> can be set up from your phone, but '+(dev.conn==='thread'?'Thread devices need a border router to stay connected and to run automations.':'remote access and automations need a hub or controller.');
-      steps=[['ok','Pair directly from the Matter setup flow on your phone'],['warn',(dev.conn==='thread'?'Add a Thread border router (Echo, HomePod, Nest Hub\u2026)':'Add any Matter controller for automations')],['warn','Without one, no remote control or routines']];
+    var steps=[];
+    if(dev.conn==='unknown'){
+      steps=['Read the exact model label and manufacturer manual before selecting a protocol.', 'Do not infer Matter from Wi-Fi, Thread, Bluetooth or an ecosystem badge.', 'If the supported protocol or required bridge cannot be verified, postpone purchase or pairing.'];
+    } else if(dev.conn==='zigbee'){
+      steps=['Verify an appropriate Zigbee coordinator or manufacturer bridge and its supported-device list.', 'Check the integration path into '+hub.name+'; Matter bridging is not automatic or universal.', 'Some systems support Zigbee natively or through integrations, so verify the exact hardware rather than assuming a bridge is always required.'];
     } else if(dev.conn==='thread'){
-      level= hub.tbr ? 'ok' : 'warn';
-      head= hub.tbr ? 'Yes \u2014 native Matter over Thread' : 'Needs a Thread border router';
-      sub='<b>'+dev.name+'</b> is a Matter-over-Thread device. '+(hub.tbr? hub.name+' includes a Thread border router, so it pairs and routes natively.' : hub.name+' can control it, but you must add a border router first.');
-      steps=[
-        ['ok','Confirm the Matter logo on the box'],
-        [hub.tbr?'ok':'warn', hub.tbr? hub.name+' already has a Thread border router':'Add a Thread border router to your network'],
-        ['ok','Scan the Matter QR code to commission it']
-      ];
-      if(hub.matter==='partial'||hub.matter==='subset'){ steps.push(['warn','Note: '+hub.name+' implements a subset of the Matter spec \u2014 some device types may not surface yet']); }
-    } else { // wifi matter
-      level='ok';
-      head='Yes \u2014 Matter over Wi-Fi';
-      sub='<b>'+dev.name+'</b> is a Matter-over-Wi-Fi device. No border router needed \u2014 it joins your existing Wi-Fi and '+hub.name+' controls it directly.';
-      steps=[['ok','Confirm the Matter logo on the box'],['ok','Join your 2.4GHz Wi-Fi during setup'],['ok','Scan the Matter QR code in the '+hub.name+' app']];
-      if(hub.matter==='subset'){ steps.push(['warn','Alexa implements a Matter subset \u2014 verify your device type is supported']); }
+      steps=['Verify that the exact device supports Matter over Thread, including its model generation and firmware.', 'Identify a supported Thread border router and a compatible Matter controller; these are different roles even if one device provides both.', 'Check '+hub.name+' documentation for the exact controller, device type, software version and supported features.'];
+    } else {
+      steps=['Verify that the exact device supports Matter over Wi-Fi; Wi-Fi alone is not Matter.', 'Check the manufacturer network-band and commissioning requirements, not a universal 2.4 GHz rule.', 'Verify a compatible Matter controller and supported device type in '+hub.name+'; a Thread border router is not required for this Wi-Fi transport.'];
     }
-
-    var icons={ok:'<path d="M5 12l5 5L20 6"/>',warn:'<path d="M12 8v5M12 17h.01"/>',no:'<path d="M7 7l10 10M17 7L7 17"/>'};
-    var matrix=[
-      ['Connection', dev.conn==='thread'?'Thread':dev.conn==='wifi'?'Wi-Fi':'Zigbee', dev.conn==='zigbee'?'no':'ok'],
-      ['Border router', dev.conn==='thread'?(hub.tbr?'Included':'Required'):'Not needed', dev.conn==='thread'?(hub.tbr?'ok':'warn'):'ok'],
-      ['Hub Matter support', hub.matter==='full'?'Full':hub.matter==='partial'?'Partial':hub.matter==='subset'?'Subset':'\u2014', hub.matter==='full'?'ok':hub.matter==='none'?'no':'warn']
-    ];
-
-    verdict.className='verdict '+level;
-    verdict.innerHTML=
-      '<div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+icons[level]+'</svg></div>'
-      +'<div class="v-head serif">'+head+'</div>'
-      +'<p class="v-sub">'+sub+'</p>'
-      +'<ul class="v-steps">'+steps.map(function(s){return '<li><span class="si '+s[0]+'">'+(s[0]==='ok'?'\u2713':'!')+'</span><span>'+s[1]+'</span></li>';}).join('')+'</ul>'
-      +'<div class="v-matrix">'+matrix.map(function(m){return '<span class="badge '+m[2]+'">'+m[0]+': '+m[1]+'</span>';}).join('')+'</div>'
-      +'<div class="v-cta"><a class="btn btn-accent" href="/guide/">See recommended '+dev.type.toLowerCase()+'s \u2192</a><a class="btn btn-ghost" href="/starter-kit-builder/">Build a full kit</a></div>';
+    if(state.hub==='none') steps.push('A phone alone is not a universal replacement for a controller or Thread border router. Check the manufacturer’s local, remote-access and automation requirements before setup.');
+    steps.push('For thermostats, switches or powered installations, also check wiring, voltage, load and regional requirements in the exact manual. Do not attempt unfamiliar mains wiring; use a qualified installer.');
+    verdict.className='verdict warn';
+    verdict.innerHTML='<div class="v-head serif">Verify exact models before pairing</div>'
+      +'<p class="v-sub">'+dev.name+' with '+hub.name+': a planning checklist, not a tested compatibility verdict.</p>'
+      +'<ul class="v-steps">'+steps.map(function(step){return '<li><span class="si warn">!</span><span>'+step+'</span></li>';}).join('')+'</ul>'
+      +'<div class="v-matrix"><span class="badge warn">Model and firmware: not verified</span><span class="badge warn">Pairing and advanced features: not tested</span></div>'
+      +'<div class="v-cta"><a class="btn btn-ghost" href="/guide/">Read setup guidance →</a></div>';
   }
 
   document.querySelectorAll('#hubs .opt').forEach(function(b){
